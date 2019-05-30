@@ -1,6 +1,11 @@
 @font-face {
 	font-family: "Fira Sans Medium";
-	src: ulr('font/FiraSans-Medium.otf');
+	src: url('font/FiraSans-Medium.otf');
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url('font/FiraSans-Regular.otf');
 }
 
 body {}
@@ -199,4 +204,246 @@ button.owl-dot span {
 	max-width: 100%;
 	width: 100%;
 	visibility: hidden;
+}
+
+.feature-wrap {
+	background-image: linear-gradient(270deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 52%, #5dae54 100%);
+}
+
+.col-5 {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.featured-box {
+	color: white;
+	padding: 70px 0;
+}
+
+.featured-box i {
+	font-size: 63px;
+}
+
+.featured-title {
+	color: #ffffff;
+	/*	font-family: "Fira Sans";*/
+	font-size: 24px;
+	font-weight: 700;
+}
+
+p {
+	color: #ffffff;
+	/*	font-family: "Fira Sans";*/
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.featured-box img {
+	display: block;
+	margin: 0 auto;
+}
+
+.title h3 {
+	font-family: "Fira Sans";
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	color: #000000;
+}
+
+.yellow-text {
+	color: #fcb813;
+}
+
+.item {
+	padding: 0 15px;
+	border-radius: 25px;
+}
+
+.upcoming-box {
+	padding: 0 15px;
+	border-radius: 11px;
+	color: white;
+	position: relative;
+}
+
+.upcoming-box:before {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	border-radius: 11px;
+}
+
+.upcoming-title {
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+date {
+	color: #fcb813;
+	font-family: "Fira Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	padding-bottom: 10px;
+	display: block;
+	position: relative;
+}
+
+.btn {
+	padding: 10px 40px;
+	border-radius: 11px;
+	color: #ffffff !important;
+	/* font-family: "Fira Sans Medium"; */
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.btn-yellow {
+	background-image: linear-gradient(-56deg, #fedd2b 0%, #fcb813 100%);
+}
+
+.news {
+	background-image: linear-gradient(180deg, #ffffff 0%, #fedd2b 73%, #fcb813 100%);
+}
+
+h4.new-title {
+	color: #fcb813;
+	font-family: "Fira Sans";
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.new-content p {
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	/* Text style for "Check out" */
+	font-family: "Fira Sans";
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+
+.new-content p a {
+	color: #6babd2;
+}
+
+.btn-blue {
+	background-image: linear-gradient(270deg, #6babd2 0%, #9ccbe8 100%);
+}
+
+.box {
+	border-radius: 11px;
+	padding: 40px;
+
+}
+
+.box-bg-gradient {
+	background-image: linear-gradient(-78deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 52%, #5dae54 100%);
+	display: flex;
+}
+
+.box-content {
+	padding-left: 20px;
+}
+
+.box-title {
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 27px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	padding-bottom: 10px;
+}
+
+.box-content p {
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 17px;
+}
+
+.box a {
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 17px;
+	display: block;
+}
+
+.box-wrapper {
+	width: 532px;
+	float: right;
+}
+
+.new-wrapper {
+	float: left;
+	width: calc(100% - 532px);
+	padding-right: 61px;
+}
+
+.-blue {
+	background-image: linear-gradient(-62deg, #6babd2 0%, #9ccbe8 100%);
+}
+
+.box .item {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 0;
+	padding: 7px 0;
+}
+
+.box .item h5 {
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	line-height: 19px;
+	margin-bottom: 0;
+}
+
+.box .item span {
+	float: right;
+	line-height: 18px;
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 14px;
+}
+
+.box img {
+	opacity: 1;
+	visibility: visible;
+	width: auto;
+}
+
+.box-blue {
+	background-image: linear-gradient(-62deg, #6babd2 0%, #9ccbe8 100%);
+}
+
+.mar-t-50 {
+	margin-top: 50px;
+}
+
+.detail-box {
+	height: 285px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.banner-wrap .item {
+	padding: 0 !important;
 }
