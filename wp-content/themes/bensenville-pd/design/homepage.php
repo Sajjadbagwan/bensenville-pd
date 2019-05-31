@@ -75,36 +75,51 @@ get_header();
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_1.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<h4 class="upcoming-title">12th Annual All Around the house Quit Show</h4>
-					<date>Saturday, March 30 and Sunday, March 31</date>
+					<div class="upcoming-text">
+						<h4 class="upcoming-title">12th Annual All Around the house Quit Show</h4>
+						<date>Saturday, March 30 and Sunday, March 31</date>
+					</div>
+					<a href="http://www.sencio.org.uk/memberships/all-in-one/" class="link-over"></a>
 				</div>
 			</div>
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
-					<date>Saturday, April 13</date>
+					<div class="upcoming-text">
+						<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
+						<date>Saturday, April 13</date>
+					</div>
+					<a href="http://www.sencio.org.uk/memberships/all-in-one/" class="link-over"></a>
 				</div>
 			</div>
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<h4 class="upcoming-title">Easter Basket Delivery</h4>
-					<date>Saturday, April 13</date>
+					<div class="upcoming-text">
+						<h4 class="upcoming-title">Easter Basket Delivery</h4>
+						<date>Saturday, April 13</date>
+					</div>
+					<a href="http://www.sencio.org.uk/memberships/all-in-one/" class="link-over"></a>
 				</div>
 			</div>
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_4.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<h4 class="upcoming-title">Flashlight Egg Hunt</h4>
-					<date>Thursday, April 18</date>
+					<div class="upcoming-text">
+						<h4 class="upcoming-title">Flashlight Egg Hunt</h4>
+						<date>Thursday, April 18</date>
+					</div>
+					<a href="http://www.sencio.org.uk/memberships/all-in-one/" class="link-over"></a>
 				</div>
 			</div>
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
-					<date>Saturday, April 13</date>
+					<div class="upcoming-text">
+						<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
+						<date>Saturday, April 13</date>
+						<a href="http://www.sencio.org.uk/memberships/all-in-one/" class="link-over"></a>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -28,7 +28,7 @@ jQuery('.banner-wrap .owl-carousel').owlCarousel({
 
 jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	loop: true,
-	margin: 10,
+	margin: 0,
 	nav: true,
 	dots: false,
 	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
