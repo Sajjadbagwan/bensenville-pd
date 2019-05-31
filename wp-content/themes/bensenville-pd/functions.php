@@ -32,6 +32,8 @@ function demo_scripts() {
 
 	wp_enqueue_script( 'custome', get_template_directory_uri() . '/js/custome.js', array(), '20151215', true );
 	
+	wp_enqueue_script( 'googletranslatore', get_template_directory_uri() . '/js/googletranslatore.js', array(), '20151215', true );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

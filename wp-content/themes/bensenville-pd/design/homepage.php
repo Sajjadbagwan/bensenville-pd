@@ -26,36 +26,36 @@ get_header();
 
 <section class="feature-wrap">
 	<div class="container">
-		<div class="clearfix">
-			<div class="col-5 col-sm-12">
+		<div class="row">
+			<div class="col-w-20">
 				<div class="featured-box">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/book.png" alt="book">
 					<h4 class="featured-title">Our Program Guide</h4>
 					<p>We Offer daily programs for all days</p>
 				</div>
 			</div>
-			<div class="col-5 col-sm-12">
+			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-calendar"></i>
 					<h4 class="featured-title">Calendar of Events</h4>
 					<p>check out what’s coming up in the future</p>
 				</div>
 			</div>
-			<div class="col-5 col-sm-12">
+			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-map"></i>
 					<h4 class="featured-title">Find a Park or Facility</h4>
 					<p>browse or search our interactive map</p>
 				</div>
 			</div>
-			<div class="col-5 col-sm-12">
+			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-umbrella"></i>
 					<h4 class="featured-title">Updates & Closures</h4>
 					<p>find out about recently cancelled classes and events</p>
 				</div>
 			</div>
-			<div class="col-5 col-sm-12">
+			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-users"></i>
 					<h4 class="featured-title">Join the Team</h4>
@@ -73,35 +73,35 @@ get_header();
 		</div>
 		<div class="owl-carousel owl-theme">
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_1.jpg')">
+				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_1.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
 					<h4 class="upcoming-title">12th Annual All Around the house Quit Show</h4>
 					<date>Saturday, March 30 and Sunday, March 31</date>
 				</div>
 			</div>
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
+				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
 					<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
 					<date>Saturday, April 13</date>
 				</div>
 			</div>
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
+				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
 					<h4 class="upcoming-title">Easter Basket Delivery</h4>
 					<date>Saturday, April 13</date>
 				</div>
 			</div>
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_4.jpg')">
+				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_4.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
 					<h4 class="upcoming-title">Flashlight Egg Hunt</h4>
 					<date>Thursday, April 18</date>
 				</div>
 			</div>
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
+				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/upcomingevents_2.jpg')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
 					<h4 class="upcoming-title">Egg Hunt & Eggstravaganza</h4>
 					<date>Saturday, April 13</date>

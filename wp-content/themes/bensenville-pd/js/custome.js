@@ -31,6 +31,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	margin: 10,
 	nav: true,
 	dots: false,
+	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 	autoplayHoverPause: true,
 	responsiveClass: true,
 	responsive: {
@@ -51,3 +52,67 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 		}
 	}
 });
+
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({
+		pageLanguage: 'en'
+	}, 'google_translate_element');
+}
+
+/*========================== window Resize ============================*/
+jQuery(document).ready(function () {
+	heightGlobal();
+});
+
+
+/*=================== window Load ===================================*/
+jQuery(window).load(function () {
+	heightGlobal();
+});
+
+
+/*========================== window Resize ============================*/
+jQuery(window).resize(function () {
+	heightGlobal();
+});
+
+
+
+/*===== global Height =======*/
+function heightGlobal() {
+	setTimeout(function () {
+		equalheight('.equal-heigth');
+	}, 1000);
+}
+
+
+/*===== Equal Height =======*/
+equalheight = function (container) {
+
+	var currentTallest = 0,
+		currentRowStart = 0,
+		rowDivs = new Array(),
+		jQueryel,
+		topPosition = 0;
+	jQuery(container).each(function () {
+		jQueryel = jQuery(this);
+		jQuery(jQueryel).innerHeight('auto')
+		topPostion = jQueryel.offset().top;
+		if (currentRowStart != topPostion) {
+			for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+				rowDivs[currentDiv].innerHeight(currentTallest);
+			}
+			rowDivs.length = 0; // empty the array
+			currentRowStart = topPostion;
+			currentTallest = jQueryel.innerHeight();
+			rowDivs.push(jQueryel);
+		} else {
+			rowDivs.push(jQueryel);
+			currentTallest = (currentTallest < jQueryel.innerHeight()) ? (jQueryel.innerHeight()) : (currentTallest);
+		}
+		for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+			rowDivs[currentDiv].innerHeight(currentTallest);
+		}
+	});
+
+}
