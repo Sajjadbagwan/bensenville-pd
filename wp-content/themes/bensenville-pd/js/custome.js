@@ -53,6 +53,34 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	}
 });
 
+
+jQuery('.waterpark-slider .owl-carousel').owlCarousel({
+	loop: true,
+	margin: 0,
+	nav: true,
+	dots: false,
+	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
+	autoplayHoverPause: true,
+	responsiveClass: true,
+	responsive: {
+		0: {
+			items: 1
+		},
+		481: {
+			items: 1
+		},
+		769: {
+			items: 1
+		},
+		991: {
+			items: 1
+		},
+		1000: {
+			items: 1
+		}
+	}
+});
+/*===============Google translator==================*/
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({
 		pageLanguage: 'en'
@@ -116,3 +144,12 @@ equalheight = function (container) {
 	});
 
 }
+
+/*====================Mobile Menu ==================*/
+jQuery('.toggle-line').click(function () {
+	jQuery(this).next('.menu-inner').slideToggle(250);
+	jQuery('.menu-inner').toggleClass('mobile-open');
+	//	jQuery(this).toggleClass('close-trigger');
+	return false;
+
+});
