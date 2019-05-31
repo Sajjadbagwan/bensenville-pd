@@ -57,3 +57,16 @@ function remove_draft_archive_link($options, $field, $the_post) {
 $options['post_status'] = array('publish');
 return $options;
 }
+
+
+function blog_limitText($string,$limit){
+  if(!empty($string)) {
+    if (strlen(strip_tags(html_entity_decode($string))) > $limit) {
+      $stringCut = substr($string, 0, $limit);
+      $string = substr($stringCut, 0, strrpos($stringCut, ' ')) ; 
+    }
+    return $string;
+  }else {
+    return false; 
+  }
+}

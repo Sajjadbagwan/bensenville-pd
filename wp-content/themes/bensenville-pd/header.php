@@ -67,22 +67,34 @@
 							) );
 							?>
 						</div><!-- .main-navigation -->
+						
+						<?php
+
+						$facebook_link = get_field('facebook_link','option');
+						$twitter_link = get_field('twitter_link','option');
+						$youtube_link = get_field('youtube_link','option');
+						$instagram_link = get_field('instagram_link','option');
+						?>
 						<div class="social-search">
 							<div class="social">
-								<a target="_blank" href="<?php echo $facebook; ?>"><i class="fa fa-facebook"></i></a>
+								<?php if(!empty($facebook_link)){?><a target="_blank" href="<?php echo $facebook_link; ?>"><i class="fa fa-facebook"></i></a><?php } ?>
 
-								<a target="_blank" href="<?php echo $twitter; ?>"><i class="fa fa-twitter"></i></a>
+								<?php if(!empty($twitter_link)){?><a target="_blank" href="<?php echo $twitter_link; ?>"><i class="fa fa-twitter"></i></a><?php } ?>
 
-								<a target="_blank" href="<?php echo $twitter; ?>"><i class="fa fa-youtube"></i></a>
+								<?php if(!empty($youtube_link)){?><a target="_blank" href="<?php echo $youtube_link; ?>"><i class="fa fa-youtube"></i></a><?php } ?>
 
-								<a target="_blank" href="<?php echo $instagram; ?>"><i class="fa fa-instagram"></i></a>
+								<?php if(!empty($instagram_link)){?><a target="_blank" href="<?php echo $instagram_link; ?>"><i class="fa fa-instagram"></i></a><?php } ?>
 
 
 
 							</div>
 							<div class="search-box">
-								<input type="text" name="" class="form-control">
-								<i class="fa fa-search"></i>
+                             <form id="serach-form" role="search" action="<?php echo home_url(); ?>" method="get">
+
+									<input type="text" name="" class="form-control">
+									
+									<i class="fa fa-search"></i>
+								</form>
 							</div>
 						</div>
 					</div>
