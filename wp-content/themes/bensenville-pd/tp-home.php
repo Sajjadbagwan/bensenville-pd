@@ -2,7 +2,7 @@
 /*Template Name: Home Page */
 get_header();
 $image_slider = get_field('image_slider');
-$service_section = get_field('service_section');
+$service_section = get_field('service_section','option');
 
 ?>
 
@@ -30,6 +30,7 @@ $service_section = get_field('service_section');
 				$service_title = $services['service_title'];
 				$service_description = $services['service_description'];
 				$service_icon = $services['service_icon'];
+				if(!empty($service_title) || !empty($service_description)){
 			?>
 			<div class="col-w-20">
 				<div class="featured-box">
@@ -38,7 +39,7 @@ $service_section = get_field('service_section');
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 				</div>
 			</div>
-		<?php } ?>
+		<?php } } ?>
 		</div>
 	</div>
 </section>
