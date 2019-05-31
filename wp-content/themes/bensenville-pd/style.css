@@ -369,7 +369,7 @@ h4.new-title {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 27px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	/*	border-bottom: 1px solid rgba(255, 255, 255, 0.6);*/
 	padding-bottom: 13px;
 	margin-bottom: 0 !important;
 	padding-right: 20px;
@@ -380,6 +380,7 @@ h4.new-title {
 	font-family: "Fira Sans";
 	font-size: 17px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	display: block;
 	padding: 13px 0;
 	margin-bottom: 10px;
@@ -690,4 +691,8 @@ section.page-banner img {
 
 .history-wrap .box-content {
 	padding-left: 0;
+}
+
+.new-content img {
+	margin-bottom: 30px;
 }
