@@ -391,6 +391,7 @@ h4.new-title {
 	color: #ffffff;
 	font-family: "Fira Sans";
 	font-size: 17px;
+	font-weight: 400;
 	display: block;
 }
 
@@ -464,14 +465,14 @@ h4.new-title {
 
 .featured-footer-box {
 	display: flex;
-	padding: 20PX 0;
+	padding: 20px 0;
+	align-items: center;
 }
 
 .featured-footer-box .featured-title {
 	font-size: 19px;
 	padding-left: 15px;
-	margin-bottom: 0;
-	vertical-align: middle;
+	margin: 0;
 }
 
 .featured-footer-box i {
@@ -494,7 +495,7 @@ footer .container {
 }
 
 .footer {
-	padding: 0px 0 70px;
+	padding: 0px 0 60px;
 }
 
 .footer-contact-box a {
@@ -552,7 +553,7 @@ form.newsletter-form {
 }
 
 .footer-logo img {
-	width: 100%;
+	width: 237px;
 }
 
 p.copyright {
@@ -615,8 +616,8 @@ p.copyright {
 }
 
 .footer-logo p {
-	padding-right: 50px;
-	margin-top: -10px;
+	padding-right: 60px;
+	margin-top: 0;
 }
 
 form.newsletter-form {
@@ -651,7 +652,7 @@ section.page-banner img {
 }
 
 .new-wrapper {
-	width: calc(100% - 340px);
+	width: 65%;
 }
 
 .history-wrap .box-content .box-title {
@@ -695,4 +696,220 @@ section.page-banner img {
 
 .new-content img {
 	margin-bottom: 30px;
+}
+
+.box-history {
+	padding-bottom: 10px;
+}
+
+.box-history .box-title {
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+.footer-col-22 {
+	width: 22%;
+}
+
+.footer-col-16 {
+	width: 16%;
+}
+
+.footer-col-12 {
+	width: 12%;
+}
+
+.footer-contact-box {
+	padding: 30px 0px 0;
+}
+
+.newsletter {
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.pad-t-30 {
+	padding-top: 30px;
+}
+
+
+/*+++SUNSCRIBE__FORM*****/
+.ninja-forms-field {
+	border-radius: 25px !important;
+	border: 2px solid #d5d5d5 !important;
+	max-width: 442px;
+	background-color: transparent !important;
+	height: auto !important;
+	padding: 4px 10px !important;
+}
+
+input#nf-field-4 {
+	float: left !important;
+	border-radius: 11px !important;
+	background-image: linear-gradient(180deg, #fedd2b 0%, #fcb813 100%);
+	padding: 6px 37px !important;
+	margin-left: 3px;
+	color: #000000 !important;
+	font-family: "Fira Sans Medium";
+	font-size: 17px;
+	font-weight: 500;
+	border: 0px !important;
+	position: absolute;
+	top: 33px;
+	right: 0;
+}
+
+nf-field {
+	float: left !important;
+}
+
+.nf-field-element {
+	max-width: 442px !important;
+	float: left;
+}
+
+nf-fields-wrap nf-field #nf-field-2-container {
+	max-width: 600px !important;
+	margin-bottom: 0;
+}
+
+.nf-field-description {
+	width: 100%;
+}
+
+.nf-form-content:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.nf-form-content {
+	position: relative;
+}
+
+div#nf-field-4-container {
+	margin-bottom: 0;
+	position: unset !important;
+}
+
+nf-fields-wrap {
+	position: relative;
+}
+
+nf-fields-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#nf-form-title-1 h3 {
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 0;
+	padding-left: 5px;
+}
+
+.breadcrumb {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background-color: transparent;
+	color: white;
+	text-align: right;
+}
+
+.breadcrumb ul li {
+	float: left;
+}
+
+.breadcrumb ul {
+	display: inline-block;
+}
+
+.breadcrumb ul li a {
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.breadcrumb ul li:after {
+	content: "\f105";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 200;
+	padding: 0 10px;
+	font-size: 23px;
+}
+
+.breadcrumb ul li:last-child::after {
+	content: '';
+}
+
+.new-wrapper ul li {
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	font-family: "Fira Sans";
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+
+ul.highlights li:before,
+ul.waterpark-ul li:before {
+	content: '';
+}
+
+ul.highlights li {
+	width: 50%;
+	float: left;
+	padding-bottom: 7px;
+}
+
+ul.waterpark-ul li {
+	padding-bottom: 7px;
+}
+
+ul.highlights:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.content-left {
+	width: 50%;
+	float: left;
+}
+
+.waterpark-slider .owl-nav .owl-prev {
+	position: absolute;
+	top: 50%;
+	left: 3%;
+}
+
+.waterpark-slider .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	right: 3%;
+}
+
+.waterpark-slider .owl-nav button span {
+	color: #6babd2;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.detail-box.content-detail-box.box {
+	height: auto;
+	overflow: auto;
 }

@@ -6,12 +6,13 @@ get_header();
 ?>
 <section class="page-banner">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/history-banner.jpg" alt="">
-	<div class="page-title">
-		<p>
-			<a href="#">About Us</a>
-			<span> > </span>
-			<a href="#">Our History </a>
-		</p>
+	<div class="breadcrumb">
+		<div class="container">
+			<ul class="clearfix">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">History</a></li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -60,9 +61,11 @@ get_header();
 				</div>
 
 				<div class="box box-blue mar-t-50">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/boximg.jpg" alt="">
-					<div class="box-content">
+					<div class="d-flex box-history">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/boximg-small.jpg" alt="">
 						<h5 class="box-title">Winter/Spring 2019 Program Guide</h5>
+					</div>
+					<div class="box-content">
 						<p>REGISTRATION BEGINS DEC 4th!</p>
 						<a href="" class="box-link"><i class="fa fa-angle-right"></i> Download Current Brochure</a>
 						<a href="" class="box-link"><i class="fa fa-angle-right"></i> Past Brochures & Registration Info</a>
