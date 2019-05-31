@@ -18,8 +18,9 @@ $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'full' );
-$banner_image = get_field('banner_image','option');
+$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'banner_image' );
+$banner_image_array = get_field('banner_image','option');
+$banner_image = $banner_image_array['sizes']['banner_image'];
 $parent_id = wp_get_post_parent_id($id);
 if($parent_id != 0){
 	$parent_page =get_page($parent_id); 
@@ -27,7 +28,7 @@ if($parent_id != 0){
 }
 ?>
 <section class="page-banner">
-	<img src="<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image['url']; } ?>" alt="">
+	<img src="<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image; } ?>" alt="">
 	<div class="page-title">
 		<p>
 			<?php if(!empty($parent_page)){?>
@@ -46,16 +47,27 @@ if($parent_id != 0){
 	<div class="container">
 		<div class="row">
 			<div class="new-wrapper">
-				<?php if(!empty($page_title)){?>
-				<div class="title">
-					<h3><?php echo $page_title;?></h3>
-				</div>
-				<?php } ?>
 				<div class="new-content">
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php echo apply_filters('the_content',get_the_content()); ?>
 					<?php endwhile; ?>
 				</div>
+				<?php 
+				$slider = get_field('slider');
+				if($slider){?>
+					<div class="waterpark-slider">
+						<div class="owl-carousel owl-theme">
+							<?php foreach ($slider as $sliders) {
+								$slider_image = $sliders['slider_image'];
+								if(!empty($slider_image)){
+							?>
+							<div class="item">
+								<img src="<?php echo $slider_image['url']; ?>" alt="">
+							</div>
+							<?php } }  ?>	
+						</div>
+					</div>
+				<?php } ?>
 			</div>
 			<div class="box-wrapper">
 				<?php
@@ -82,8 +94,8 @@ if($parent_id != 0){
 						</ul>
 					</div>
 				</div>
-			<?php } ?>
     			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+			<?php } ?>
 			</div>
 		</div>
 	</div>

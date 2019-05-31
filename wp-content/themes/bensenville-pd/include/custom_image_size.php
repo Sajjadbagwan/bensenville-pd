@@ -1,5 +1,5 @@
 <?php
 
-// add_image_size( 'slider_image', 1920, 672, array( 'center', 'center' ));
+ add_image_size( 'banner_image', 1920, 307, array( 'center', 'center' ));
 
 ?>
