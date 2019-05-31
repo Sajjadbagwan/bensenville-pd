@@ -134,7 +134,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 					<div class="detail-box">
 						<div class="item clearfix">
 							<h5>Bensenville Water Park</h5>
-							<span>closed for the season</spann>
+							<span>closed for the season</span>
 						</div>
 						<div class="item clearfix">
 							<h5>Deer Grove Leisure Center</h5>
@@ -175,6 +175,4 @@ $bensenville_park_title = get_field('bensenville_park_title');
 		</div>
 	</div>
 </section>
-
-
 <?php get_footer(); ?>
