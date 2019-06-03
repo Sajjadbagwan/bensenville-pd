@@ -121,7 +121,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 						<?php endwhile; endif; ?>
 
 					<div class="btn-box text-left">
-						<a class="btn btn-blue">View more news Items</a>
+						<a class="btn btn-blue" href="<?php echo get_permalink(get_option('page_for_posts'));?>">View more news Items</a>
 					</div>
 				</div>
 			</div>
