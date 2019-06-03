@@ -18,9 +18,9 @@ $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'banner_image' );
+$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'inner_banner_image' );
 $banner_image_array = get_field('banner_image','option');
-$banner_image = $banner_image_array['sizes']['banner_image'];
+$banner_image = $banner_image_array['sizes']['inner_banner_image'];
 $parent_id = wp_get_post_parent_id($id);
 if($parent_id != 0){
 	$parent_page =get_page($parent_id); 
@@ -58,11 +58,13 @@ if($parent_id != 0){
 					<div class="waterpark-slider">
 						<div class="owl-carousel owl-theme">
 							<?php foreach ($slider as $sliders) {
-								$slider_image = $sliders['slider_image'];
+								$slider_image_array = $sliders['slider_image'];
+								$slider_image = $slider_image_array['sizes']['waterpark_slider_image'];
+
 								if(!empty($slider_image)){
 							?>
 							<div class="item">
-								<img src="<?php echo $slider_image['url']; ?>" alt="">
+								<img src="<?php echo $slider_image; ?>" alt="">
 							</div>
 							<?php } }  ?>	
 						</div>

@@ -1,14 +1,15 @@
 <?php
 	$winter_spring_title = get_field('winter_spring_title','option');
 	$winter_spring_description = get_field('winter_spring_description','option');
-	$winter_spring_background_image = get_field('winter_spring_background_image','option');
+	$winter_spring_background_image_array = get_field('winter_spring_background_image','option');
+	$winter_spring_background_image = $winter_spring_background_image_array['sizes']['sidebar_image'];
 	$winter_spring_link_section = get_field('winter_spring_link_section','option');	
 	?>
 
 <?php if(is_front_page()) {?>
 <div class="box box-bg-gradient clearfix">
 	<?php if(!empty($winter_spring_background_image)){?>
-		<img src="<?php echo $winter_spring_background_image['url']?>" alt="">
+		<img src="<?php echo $winter_spring_background_image;?>" alt="">
 	<?php } ?>
 	<?php if(!empty($winter_spring_title) || !empty($winter_spring_description)){?>
 	<div class="box-content">
@@ -37,7 +38,7 @@
 <?php }else{ ?>
 <div class="box box-blue mar-t-50">
 	<?php if(!empty($winter_spring_background_image)){?>
-		<img src="<?php echo $winter_spring_background_image['url']?>" alt="">
+		<img src="<?php echo $winter_spring_background_image?>" alt="">
 	<?php } ?>
 	<?php if(!empty($winter_spring_title) || !empty($winter_spring_description)){?>
 	<div class="box-content">

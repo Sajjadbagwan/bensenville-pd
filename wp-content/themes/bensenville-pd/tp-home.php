@@ -12,10 +12,11 @@ $service_section = get_field('service_section','option');
 		<div class="owl-carousel owl-theme">
 			<?php
 			foreach ($image_slider as $slider) {
-				$image = $slider['image'];
+				$image_array = $slider['image'];
+				$image = $image_array['sizes']['home_slider_image'];
 			?>
 			<div class="item">
-				<img src="<?php echo $image['url']?>" alt="">
+				<img src="<?php echo $image;?>" alt="">
 			</div>
 			<?php } ?>
 		</div>
@@ -47,7 +48,8 @@ $service_section = get_field('service_section','option');
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $today = date("Y-m-d H:i:s");
-$events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_date' => $today ) );
+$events = tribe_get_events(array('order'=> 'DESC','start_date' => $today ) );
+if(!empty($events)){
 ?>
 <section class="upcoming-wrap pad-t-b">
 	<div class="container">
@@ -59,7 +61,7 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 			foreach ($events as $event) {
 			$title = $event->post_title;
 			$ID = $event->ID;
-			$image =wp_get_attachment_image_src( get_post_thumbnail_id($ID),'full' );
+			$image =wp_get_attachment_image_src( get_post_thumbnail_id($ID),'upcoming_event_image' );
 			$startdate = tribe_get_start_date($event,false,'l, F j');
 			$enddate = tribe_get_end_date($event,false,'l, F j');	
 			if($startdate !=$enddate){
@@ -77,6 +79,7 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 					</div>
 					<a href="#" class="link-over"></a>
 				</div>
+				<a href="<?php echo get_permalink($event->ID);?>" class="link-over"></a>
 			</div>
 			<?php } ?>
 		</div>
@@ -85,7 +88,7 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 		</div>
 	</div>
 </section>
-
+<?php } ?>
 <?php
 $bensenville_park_title = get_field('bensenville_park_title');
 ?>
@@ -125,7 +128,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 					<?php endwhile; endif; ?>
 
 					<div class="btn-box text-left">
-						<a class="btn btn-blue">View more news Items</a>
+						<a class="btn btn-blue" href="<?php echo get_permalink(get_option('page_for_posts'));?>">View more news Items</a>
 					</div>
 				</div>
 			</div>
