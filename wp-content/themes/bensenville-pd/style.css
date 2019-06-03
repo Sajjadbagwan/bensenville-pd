@@ -139,7 +139,8 @@ header {
 	/* padding-left: 5px; */
 }
 
-.social a {
+.social a,
+.mobile-search i {
 	color: #6babd2;
 	font-size: 20px;
 	padding: 10px 18px 14px 0;
@@ -610,7 +611,8 @@ p.copyright {
 	line-height: 30px;
 }
 
-.upcoming-wrap .owl-next span {
+.upcoming-wrap .owl-next span,
+.upcoming-wrap .owl-prev span {
 	color: #6babd2;
 	font-size: 30px;
 	font-weight: 400;
@@ -1057,12 +1059,8 @@ tr {
 	font-size: 18px;
 	display: inline-block;
 	padding-bottom: 0px;
-	transform: skew(0deg, 1deg);
 }
 
-.banner-text a {
-	transform: skew(0deg, 1deg);
-}
 
 .banner-text-iiner {
 	transform: skew(17deg, 1deg);
@@ -1070,4 +1068,13 @@ tr {
 
 .baner-text-content {
 	padding-top: 17px;
+}
+
+.mobile-search {
+	display: none;
+}
+
+.toggle-line i {
+	color: #6babd2;
+	font-size: 40px;
 }
