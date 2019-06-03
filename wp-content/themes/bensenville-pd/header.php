@@ -29,11 +29,15 @@
 					<div class="col-md-5 header-left">
 						<div class="toggle-menu">
 							<div class="toggle-line">
+								<!--
 								<span></span>
 								<span></span>
 								<span></span>
+-->
+								<i class="fa fa-bars"></i>
+								<i class="fa fa-close"></i>
 							</div>
-							<span class="text">Menu</span>
+							<!--							<span class="text">Menu</span>-->
 						</div>
 						<div class="main-navigation">
 							<div class="menu-inner">
@@ -67,7 +71,7 @@
 							) );
 							?>
 						</div><!-- .main-navigation -->
-						
+
 						<?php
 
 						$facebook_link = get_field('facebook_link','option');
@@ -76,6 +80,10 @@
 						$instagram_link = get_field('instagram_link','option');
 						?>
 						<div class="social-search">
+
+							<div class="mobile-search">
+								<i class="fa fa-search"></i>
+							</div>
 							<div class="social">
 								<?php if(!empty($facebook_link)){?><a target="_blank" href="<?php echo $facebook_link; ?>"><i class="fa fa-facebook"></i></a><?php } ?>
 
@@ -84,15 +92,12 @@
 								<?php if(!empty($youtube_link)){?><a target="_blank" href="<?php echo $youtube_link; ?>"><i class="fa fa-youtube"></i></a><?php } ?>
 
 								<?php if(!empty($instagram_link)){?><a target="_blank" href="<?php echo $instagram_link; ?>"><i class="fa fa-instagram"></i></a><?php } ?>
-
-
-
 							</div>
 							<div class="search-box">
-                             <form id="serach-form" role="search" action="<?php echo home_url(); ?>" method="get">
+								<form id="serach-form" role="search" action="<?php echo home_url(); ?>" method="get">
 
 									<input type="text" name="" class="form-control">
-									
+
 									<i class="fa fa-search"></i>
 								</form>
 							</div>

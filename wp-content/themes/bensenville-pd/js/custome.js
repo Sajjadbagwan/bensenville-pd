@@ -153,3 +153,62 @@ jQuery('.toggle-line').click(function () {
 	return false;
 
 });
+
+
+
+
+/*---------------------- Touch ----------------------*/
+if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
+} else {
+	document.documentElement.className += " touch";
+}
+
+
+if (document.documentMode === 10) {
+	document.documentElement.className += ' ie10';
+} else if (document.documentMode === 11) {
+	document.documentElement.className += ' ie11';
+}
+
+jQuery(".toggle-line").on("click touchstart", function (event) {
+	event.preventDefault();
+	event.stopPropagation();
+	jQuery("body").toggleClass("menu-open");
+});
+
+jQuery(document).on('click touchstart', function () {
+	jQuery('body').removeClass('menu-open');
+	jQuery('body').removeClass('search-open');
+	/* jQuery(".search-form-top").css('display' ,'none');*/
+});
+
+jQuery(".site-header .main-navigation, #serach-form, .social-search .mobile-search").on("click touchstart", function (event) {
+	event.stopPropagation();
+});
+
+
+jQuery(".touch .main-navigation ul li > a").on("click touchstart", function (event) {
+
+	if (!jQuery(this).parent().hasClass("open") && jQuery(this).parent().has("ul").length > 0) {
+		event.preventDefault();
+		event.stopPropagation();
+		/*jQuery(this).parent().addClass("open").siblings().removeClass("open");*/
+	}
+});
+
+jQuery('.menu-item-has-children > a').after(' <div class="child-trigger"><i></i></div>');
+
+jQuery('.child-trigger').click(function () {
+	jQuery(this).parent().siblings('.menu-item-has-children').find('.child-trigger').removeClass('child-open');
+	jQuery(this).parent().siblings('.menu-item-has-children').find('.sub-menu').slideUp(250);
+	jQuery(this).next('.sub-menu').slideToggle(250);
+	jQuery(this).toggleClass('child-open');
+	return false;
+});
+
+
+jQuery(".social-search .mobile-search").click(function (event) {
+	jQuery('body').toggleClass('search-open');
+
+});
