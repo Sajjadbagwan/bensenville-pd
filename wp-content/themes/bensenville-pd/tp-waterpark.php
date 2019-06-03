@@ -10,8 +10,9 @@ $page_link = get_page_link($id);
 $page_title = $page->post_title;
 $banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
 $banner_image_array = get_field('banner_image','option');
-$banner_image = $banner_image_array['sizes']['inner_banner_image'];
-$banner_logo = get_field('banner_logo');
+$banner_image = $banner_image_array['sizes']['waterpark_banner_image'];
+$banner_logo_array = get_field('banner_logo');
+$banner_logo = $banner_logo_array['sizes']['waterpark_banner_logo'];
 $parent_id = wp_get_post_parent_id($id);
 if($parent_id != 0){
 	$parent_page =get_page($parent_id); 
@@ -33,7 +34,7 @@ if($parent_id != 0){
 		</ul>
 		<?php if(!empty($banner_logo)){?>
 		<div class="banner-logo">
-				<img src="<?php echo $banner_logo['url'];?>" alt="">
+				<img src="<?php echo $banner_logo;?>" alt="">
 		</div>
 		<?php } ?>
 		</div>
