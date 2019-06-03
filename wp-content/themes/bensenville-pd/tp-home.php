@@ -12,13 +12,39 @@ $service_section = get_field('service_section','option');
 		<div class="owl-carousel owl-theme">
 			<?php
 			foreach ($image_slider as $slider) {
-				$image_array = $slider['image'];
+				$image_array = $slider['slider_image'];
 				$image = $image_array['sizes']['home_slider_image'];
+				$slider_title = $slider['slider_title'];
+				$slider_description = $slider['slider_description'];
+				$slider_button_title = $slider['slider_button_title'];
+				$slider_button_type = $slider['slider_button_type'];
+				$slider_internal_link = $slider['slider_internal_link'];
+				$slider_external_link = $slider['slider_external_link'];
+				
+
 			?>
 			<div class="item">
 				<img src="<?php echo $image;?>" alt="">
-			</div>
+				<?php if(!empty($slider_title) || !empty($slider_description)){ ?>
+				<div class="banner-text">
+					<div class="banner-text-iiner">
+						<?php if(!empty($slider_title)){?><h3><?php echo $slider_title;?></h3><?php } ?>
+						<?php if(!empty($slider_description)){?>
+						<div class="baner-text-content">
+							<p><?php echo $slider_description;?></p>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='Internal'){?>
+							<a href="<?php echo $slider_internal_link;?>" class="btn btn-blue"><?php echo $slider_button_title;?></a>
+							<?php } ?>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='External'){?>
+							<a href="<?php echo $slider_external_link;?>" target="_blank" class="btn btn-blue"><?php echo $slider_button_title;?></a>
+							<?php } ?>
+						</div>
+						<?php } ?>
+					</div>
+				</div>
 			<?php } ?>
+			</div>
+			<?php }  ?>
 		</div>
 	</div>
 </section>
