@@ -75,7 +75,7 @@ function add_featured_image_instruction($content) {
 global $post;
 $post_type = get_post_type();
 if($post_type == 'tribe_events'){
-$content .= '<p><b>Recommended 2000 * 450 Pixel</b></p>';
+$content .= '<p><b>Recommended 400 * 300 Pixel</b></p>';
 }
 return $content;
 }

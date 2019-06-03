@@ -12,10 +12,11 @@ $service_section = get_field('service_section','option');
 		<div class="owl-carousel owl-theme">
 			<?php
 			foreach ($image_slider as $slider) {
-				$image = $slider['image'];
+				$image_array = $slider['image'];
+				$image = $image_array['sizes']['home_slider_image'];
 			?>
 			<div class="item">
-				<img src="<?php echo $image['url']?>" alt="">
+				<img src="<?php echo $image;?>" alt="">
 			</div>
 		<?php } ?>
 		</div>
@@ -60,7 +61,7 @@ if(!empty($events)){
 			foreach ($events as $event) {
 			$title = $event->post_title;
 			$ID = $event->ID;
-			$image =wp_get_attachment_image_src( get_post_thumbnail_id($ID),'full' );
+			$image =wp_get_attachment_image_src( get_post_thumbnail_id($ID),'upcoming_event_image' );
 			$startdate = tribe_get_start_date($event,false,'l, F j');
 			$enddate = tribe_get_end_date($event,false,'l, F j');	
 			if($startdate !=$enddate){
