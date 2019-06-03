@@ -47,7 +47,8 @@ $service_section = get_field('service_section','option');
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $today = date("Y-m-d H:i:s");
-$events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_date' => $today ) );
+$events = tribe_get_events(array('order'=> 'DESC','start_date' => $today ) );
+if(!empty($events)){
 ?>
 <section class="upcoming-wrap pad-t-b">
 	<div class="container">
@@ -73,6 +74,7 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 					<?php if(!empty($title)){?><h4 class="upcoming-title"><?php echo $title;?></h4><?php } ?>
 					<date><?php echo $date;?></date>
 				</div>
+				<a href="<?php echo get_permalink($event->ID);?>" class="link-over"></a>
 			</div>
 		<?php } ?>
 		</div>
@@ -81,7 +83,7 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 		</div>
 	</div>
 </section>
-
+<?php } ?>
 <?php
 $bensenville_park_title = get_field('bensenville_park_title');
 ?>
