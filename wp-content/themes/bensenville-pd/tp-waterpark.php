@@ -1,24 +1,14 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bensenville-pd
+ Template Name:  Waterpark
  */
-
 get_header();
 
 $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'inner_banner_image' );
+$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
 $banner_image_array = get_field('banner_image','option');
 $banner_image = $banner_image_array['sizes']['inner_banner_image'];
 $banner_logo = get_field('banner_logo');
@@ -41,12 +31,17 @@ if($parent_id != 0){
 				<li><a href="<?php echo $page_link;?>"><?php echo $page_title;?> </a></li>
 		<?php } ?>
 		</ul>
+		<?php if(!empty($banner_logo)){?>
+		<div class="banner-logo">
+				<img src="<?php echo $banner_logo['url'];?>" alt="">
+		</div>
+		<?php } ?>
 		</div>
 	</div>
 </section>
 
 
-<section class="news pad-t-b history-wrap">
+<section class="history-wrap waterpart-wrap pad-t-b">
 	<div class="container">
 		<div class="row">
 			<div class="new-wrapper">
@@ -55,13 +50,26 @@ if($parent_id != 0){
 						<?php echo apply_filters('the_content',get_the_content()); ?>
 					<?php endwhile; ?>
 				</div>
+				<?php 
+				$slider = get_field('slider');
+				if($slider){?>
+					<div class="waterpark-slider">
+						<div class="owl-carousel owl-theme">
+							<?php foreach ($slider as $sliders) {
+								$slider_image_array = $sliders['slider_image'];
+								$slider_image = $slider_image_array['sizes']['waterpark_slider_image'];
+
+								if(!empty($slider_image)){
+							?>
+							<div class="item">
+								<img src="<?php echo $slider_image; ?>" alt="">
+							</div>
+							<?php } }  ?>	
+						</div>
+					</div>
+				<?php } ?>
 			</div>
 			<div class="box-wrapper">
-				<?php
-				$sidebar = get_field('sidebar');
-				$sidebar_option = $sidebar[0];
-				if($sidebar_option == 'Yes'){
-				?>
 				<div class="box box-bg-gradient clearfix">
 					<div class="box-content">
 						<h5 class="box-title">About Us</h5>
@@ -81,8 +89,8 @@ if($parent_id != 0){
 						</ul>
 					</div>
 				</div>
+
     			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
-			<?php } ?>
 			</div>
 		</div>
 	</div>
