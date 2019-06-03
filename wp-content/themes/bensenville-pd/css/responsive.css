@@ -386,6 +386,14 @@
 	.search-open .search-box .form-control {
 		width: 100%;
 	}
+
+	.history-wrap .box-wrapper {
+		width: 100%;
+	}
+
+	.history-wrap .new-wrapper {
+		width: 100%;
+	}
 }
 
 @media (max-width:767px) {
@@ -559,5 +567,20 @@
 	p.copyright {
 		width: 188px;
 		margin: 0 auto;
+	}
+
+
+
+	.new-content img {
+		width: 100%;
+	}
+
+	section.page-banner img {
+		height: 100%;
+		width: auto;
+	}
+
+	section.page-banner {
+		height: 300px;
 	}
 }
