@@ -10,6 +10,15 @@ get_header();
 		<div class="owl-carousel owl-theme">
 			<div class="item">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="">
+				<div class="banner-text">
+					<div class="banner-text-iiner">
+						<h3>Watre park passes 15% OFF Through April 30th</h3>
+						<div class="baner-text-content">
+							<p>Passes availabel at Deert Grove Leirsure Center.</p>
+							<a href="" class="btn btn-blue">Get Your Passes Now</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="item">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="">

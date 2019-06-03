@@ -17,7 +17,7 @@ $service_section = get_field('service_section','option');
 			<div class="item">
 				<img src="<?php echo $image['url']?>" alt="">
 			</div>
-		<?php } ?>
+			<?php } ?>
 		</div>
 	</div>
 </section>
@@ -39,7 +39,7 @@ $service_section = get_field('service_section','option');
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 				</div>
 			</div>
-		<?php } } ?>
+			<?php } } ?>
 		</div>
 	</div>
 </section>
@@ -70,11 +70,15 @@ $events = tribe_get_events(array('posts_per_page' => 4 ,'order'=> 'DESC','start_
 			<div class="item">
 				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo $image[0]; ?>')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
-					<?php if(!empty($title)){?><h4 class="upcoming-title"><?php echo $title;?></h4><?php } ?>
-					<date><?php echo $date;?></date>
+					<div class="upcoming-text">
+						<?php if(!empty($title)){?><h4 class="upcoming-title"><?php echo $title;?></h4><?php } ?>
+
+						<date><?php echo $date;?></date>
+					</div>
+					<a href="#" class="link-over"></a>
 				</div>
 			</div>
-		<?php } ?>
+			<?php } ?>
 		</div>
 		<div class="btn-box text-right">
 			<a class="btn btn-yellow" href="<?php echo get_permalink(get_page_by_path('events/'));?>">View all Events in Calender</a>
@@ -90,9 +94,9 @@ $bensenville_park_title = get_field('bensenville_park_title');
 		<div class="row">
 			<div class="new-wrapper">
 				<?php if(!empty($bensenville_park_title)){?>
-					<div class="title">
-						<h3><?php echo $bensenville_park_title;?></h3>
-					</div>
+				<div class="title">
+					<h3><?php echo $bensenville_park_title;?></h3>
+				</div>
 				<?php } ?>
 				<div class="new-content">
 					<?php if ( have_posts() ) :
@@ -108,17 +112,17 @@ $bensenville_park_title = get_field('bensenville_park_title');
 							$link = get_the_permalink(get_the_ID());
 							$content =apply_filters( 'the_content', get_the_content() );
 							?>
-								<?php if(!empty($title)){?><h4 class="new-title"><a href="<?php echo $link;?>"><?php echo $title;?></a></h4><?php } ?>
-								<?php if(!empty($content)){?>
-									<?php $count = strlen($content);
+					<?php if(!empty($title)){?><h4 class="new-title"><a href="<?php echo $link;?>"><?php echo $title;?></a></h4><?php } ?>
+					<?php if(!empty($content)){?>
+					<?php $count = strlen($content);
 										if ($count > 400) {
 											echo blog_limitText($content,400).' <a href='.$link.'>Click here to learn more </a>';
 										}else{
 											echo blog_limitText($content,400);
 										}
 									?>
-							<?php } ?>
-						<?php endwhile; endif; ?>
+					<?php } ?>
+					<?php endwhile; endif; ?>
 
 					<div class="btn-box text-left">
 						<a class="btn btn-blue">View more news Items</a>
@@ -126,8 +130,8 @@ $bensenville_park_title = get_field('bensenville_park_title');
 				</div>
 			</div>
 			<div class="box-wrapper">
-    			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
-			
+				<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+
 
 				<div class="box box-blue mar-t-50">
 					<h4 class="new-title">Field & Facility Updates…</h4>

@@ -17,7 +17,43 @@ a:hover {
 
 ul,
 ol {
-	list-style-type: none;
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+h4 {
+	color: #fcb813;
+	font-family: "Fira Sans";
+	font-size: 24px;
+	font-weight: 700;
+}
+
+p {
+	color: #000000;
+	font-size: 18px;
+	line-height: 27px;
+	font-family: "Fira Sans";
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+
+ul li {
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	padding-bottom: 0;
+	/*
+	float: left;
+	width: 50%;
+*/
 }
 
 
@@ -57,6 +93,9 @@ header {
 
 .menu li {
 	float: left;
+	list-style-type: none;
+	padding-bottom: 0;
+	width: auto;
 }
 
 .menu li a {
@@ -337,7 +376,7 @@ h4.new-title {
 	line-height: 27px;
 	/* Text style for "Check out" */
 	font-family: "Fira Sans";
-	font-weight: 700;
+	/*	font-weight: 700;*/
 	padding-bottom: 30px;
 }
 
@@ -659,7 +698,7 @@ section.page-banner img {
 	border-bottom: 0;
 }
 
-.history-wrap ul {
+.history-wrap .box ul {
 	padding-left: 0;
 	list-style-type: none;
 	color: white;
@@ -669,11 +708,18 @@ section.page-banner img {
 	font-weight: 400;
 }
 
-.history-wrap ul li {
+.history-wrap .box-wrapper ul li {
 	position: relative;
+	color: white;
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 17px;
+	font-weight: 400;
+	float: none;
+	width: 100%;
 }
 
-.history-wrap ul li:before {
+.history-wrap .box-wrapper ul li:before {
 	content: "\f105";
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -757,6 +803,8 @@ input#nf-field-4 {
 	position: absolute;
 	top: 33px;
 	right: 0;
+	cursor: pointer;
+	z-index: 9999;
 }
 
 nf-field {
@@ -802,6 +850,10 @@ nf-fields-wrap:after {
 	clear: both;
 }
 
+#nf-field-2-wrap .nf-field-element {
+	z-index: 9999;
+}
+
 #nf-form-title-1 h3 {
 	color: #000000;
 	font-family: "Fira Sans";
@@ -819,6 +871,7 @@ nf-fields-wrap:after {
 	background-color: transparent;
 	color: white;
 	text-align: right;
+	height: 100%;
 }
 
 .breadcrumb ul li {
@@ -853,6 +906,7 @@ nf-fields-wrap:after {
 	content: '';
 }
 
+/*
 .new-wrapper ul li {
 	color: #000000;
 	font-family: "Fira Sans";
@@ -863,6 +917,7 @@ nf-fields-wrap:after {
 	font-weight: 700;
 	padding-bottom: 30px;
 }
+*/
 
 ul.highlights li:before,
 ul.waterpark-ul li:before {
@@ -912,4 +967,107 @@ ul.highlights:after {
 .detail-box.content-detail-box.box {
 	height: auto;
 	overflow: auto;
+}
+
+.nf-error.field-wrap .nf-field-element:after {
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 34px !important;
+	width: 34px !important;
+	line-height: 34px !important;
+}
+
+.nf-pass.field-wrap .nf-field-element:after {
+	right: 5px !important;
+	height: 36px !important;
+	line-height: 36px !important;
+}
+
+h4.new-title a {
+	color: #fcb813;
+}
+
+.box .item.close h5,
+.box .item.close span {
+	color: rgba(113, 150, 172, 1);
+}
+
+.banner-logo {
+	width: 600px;
+	bottom: 80px;
+	position: absolute;
+	background-color: #ffffffbf;
+	border-radius: 80px;
+	padding: 25px 82px;
+	transform: rotate(3deg);
+	text-align: center;
+	bottom: 80px;
+}
+
+.breadcrumb ul li {
+	list-style-type: none;
+	width: auto;
+}
+
+.breadcrumb ul li:after {
+	color: white;
+}
+
+table tr td {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 0;
+	padding: 11px 0;
+	color: #000000;
+	font-family: "Fira Sans";
+	font-size: 14px;
+	font-weight: 700;
+}
+
+table {
+	width: 100% !important;
+	margin: 0 20px;
+	margin-bottom: 80px;
+}
+
+tr {
+	border-bottom: 2px solid #d8d8d8;
+}
+
+.banner-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	background-color: #ffffff96;
+	max-width: 820px;
+	margin: 0 auto;
+	transform: skew(-17deg, -1deg);
+	padding: 40px 0;
+}
+
+.banner-text h3 {
+	font-size: 28px;
+	text-transform: uppercase;
+	/*	transform: skew(0deg, 1deg);*/
+}
+
+.banner-text p {
+	color: #000000;
+	font-size: 18px;
+	display: inline-block;
+	padding-bottom: 0px;
+	transform: skew(0deg, 1deg);
+}
+
+.banner-text a {
+	transform: skew(0deg, 1deg);
+}
+
+.banner-text-iiner {
+	transform: skew(17deg, 1deg);
+}
+
+.baner-text-content {
+	padding-top: 17px;
 }

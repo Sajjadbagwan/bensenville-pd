@@ -42,10 +42,10 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 			items: 1
 		},
 		769: {
-			items: 4
+			items: 2
 		},
 		991: {
-			items: 4
+			items: 2
 		},
 		1000: {
 			items: 4

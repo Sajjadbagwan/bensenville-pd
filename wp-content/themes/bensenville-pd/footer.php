@@ -21,25 +21,6 @@
 	$service_section = get_field('service_section','option');
 if(!empty($service_section) && (!is_front_page())){?>
 
-<div class="feature-wrap featured-footer">
-	<div class="container">
-		<div class="row">
-		<?php 
-		foreach ($service_section as $services) {
-			$service_title = $services['service_title'];
-			$service_icon = $services['service_icon'];
-			if(!empty($service_title)){
-		?>	
-			<div class="col-w-20">
-				<div class="featured-footer-box">
-					<i class="fa fa-<?php echo $service_icon;?>"></i>
-					<?php if(!empty($service_title)){?><h4 class="featured-title"><?php echo $service_title;?></h4><?php } ?>
-				</div>
-			</div>
-		<?php } } ?>
-		</div>
-	</div>
-</div>
 
 <?php } ?>
 <footer id="colophon" class="site-footer">
