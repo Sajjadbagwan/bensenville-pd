@@ -530,7 +530,7 @@ h4.new-title {
 .detail-box {
 	height: 285px;
 	overflow: hidden;
-	overflow-y: scroll;
+	/*	overflow-y: scroll;*/
 	margin-right: 0;
 }
 
@@ -1201,4 +1201,52 @@ div#nf-error-2 {
 
 span.ninja-forms-req-symbol {
 	display: none;
+}
+
+/**SUBMENU**/
+
+
+
+
+ul.sub-menu li {
+	float: none;
+}
+
+ul.sub-menu {
+	position: absolute;
+	top: 110px;
+	z-index: 9999;
+	background-color: white;
+	padding: 0;
+	box-shadow: 0 0 3px #eee;
+	width: 200px;
+	display: none;
+}
+
+ul.sub-menu li {
+	position: relative;
+	padding: 5px 15px;
+}
+
+ul.sub-menu li a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0;
+}
+
+ul.sub-menu .sub-menu {
+	display: none;
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+
+ul.sub-menu li a {}
+
+ul.sub-menu li:hover > .sub-menu {
+	display: block;
+}
+
+.menu li:hover > .sub-menu {
+	display: block;
 }

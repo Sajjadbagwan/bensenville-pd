@@ -5,6 +5,118 @@
 get_header();
 ?>
 
+
+
+
+<style type="text/css">
+	/*Vertical scrollbar - set width and height of a div you want to add a scrollbar to*/
+	#vertical-scrollbar-demo {
+		height: 100px;
+		width: 400px;
+	}
+
+	/*Horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+	#horizontal-scrollbar-demo {
+		width: 400px;
+		height: 200px;
+	}
+
+	/*Horizontal scrollbar - set width of overview or make it expand horizontal like below*/
+	#horizontal-scrollbar-demo .overview {
+		/*width: 1836px;*/
+		/* or */
+		white-space: nowrap;
+	}
+
+	#horizontal-scrollbar-demo img {
+		height: 180px;
+		width: 180px;
+	}
+
+	/*Vertical and horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+	#vertical-horizontal-scrollbar-demo {
+		width: 400px;
+		height: 200px;
+	}
+
+	#vertical-horizontal-scrollbar-demo .overview {
+		width: 600px;
+	}
+
+	/* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+	#min-thumb-size-demo .overview {
+		width: 600px;
+	}
+
+	/*Vertical and horizontal scrollbar - set width and height of a div you want to add a scrollbar to*/
+	#min-thumb-size-demo {
+		width: 400px;
+		height: 200px;
+	}
+
+	/* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+	#min-thumb-size-demo .overview {
+		width: 600px;
+	}
+
+	#min-thumb-size-demo .vertical .thumb {
+		min-height: 150px;
+	}
+
+	#min-thumb-size-demo .horizontal .thumb {
+		min-width: 300px;
+	}
+
+	#fixed-thumb-size-demo {
+		width: 400px;
+		height: 200px;
+	}
+
+	/* Vertical and horizontal scrollbar - one extra step required - add width of overview - overall width of scrolled content*/
+	#fixed-thumb-size-demo .overview {
+		width: 600px;
+	}
+
+	/*No scrollbar needed*/
+	#no-scrollbar-needed {
+		max-height: 100px;
+		max-width: 400px;
+	}
+
+</style>
+
+
+
+<div id="vertical-horizontal-scrollbar-demo" class="default-skin demo">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed,
+	lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
+	Quisque
+	semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed
+	posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel
+	tempus
+	metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque.
+	Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus
+	eget
+	nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi,
+	in
+	interdum massa nibh nec erat.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed,
+	lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
+	Quisque
+	semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed
+	posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel
+	tempus
+	metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque.
+	Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus
+	eget
+	nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi,
+	in
+	interdum massa nibh nec erat.
+</div>
+
+
+
+
 <section class="home-banner">
 	<div class="banner-wrap">
 		<div class="owl-carousel owl-theme">
@@ -220,6 +332,12 @@ get_header();
 		</div>
 	</div>
 </section>
+
+
+<script type="text/javascript">
+
+
+</script>
 
 
 <?php get_footer(); ?>

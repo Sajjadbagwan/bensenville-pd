@@ -154,7 +154,9 @@ jQuery('.toggle-line').click(function () {
 
 });
 
-
+jQuery('.child-trigger').click(function () {
+	jQuery('.sub-menu').toggleClass('menu-open');
+});
 
 
 /*---------------------- Touch ----------------------*/
@@ -212,3 +214,9 @@ jQuery(".social-search .mobile-search").click(function (event) {
 	jQuery('body').toggleClass('search-open');
 
 });
+
+
+/***SCROLLBAR***/
+
+
+jQuery(".detail-box").mCustomScrollbar();
