@@ -42,7 +42,7 @@ $service_section = get_field('service_section','option');
 						<?php } ?>
 					</div>
 				</div>
-			<?php } ?>
+				<?php } ?>
 			</div>
 			<?php }  ?>
 		</div>
@@ -62,7 +62,7 @@ $service_section = get_field('service_section','option');
 			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-<?php echo $service_icon;?>"></i>
-					<?php if(!empty($service_title)){?><h4 class="featured-title"><?php echo $service_title;?></h4><?php } ?>
+					<?php if(!empty($service_title)){?><h4 class="featured-title"><a href="#"><?php echo $service_title;?></a></h4><?php } ?>
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 				</div>
 			</div>

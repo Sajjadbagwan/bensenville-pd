@@ -3,8 +3,8 @@ jQuery('.banner-wrap .owl-carousel').owlCarousel({
 	margin: 10,
 	nav: false,
 	dots: true,
-	//	autoplay: true,
-	//	autoplayTimeout: 3000,
+	autoplay: true,
+	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	responsiveClass: true,
 	responsive: {

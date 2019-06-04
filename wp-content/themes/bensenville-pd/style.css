@@ -100,11 +100,19 @@ header {
 
 .menu li a {
 	color: #424242;
-	/* font-family: "Fira Sans Medium"; */
+	font-family: "Fira Sans Medium";
 	font-size: 20px;
 	font-weight: 500;
 	padding: 58px 49px 44px 0;
 	display: block;
+	transition: 0.7s;
+	line-height: 28px;
+}
+
+.menu li a:hover,
+.menu li.current_page_item a,
+.menu li a:focus {
+	color: #55cdb7;
 }
 
 .social-search {
@@ -219,6 +227,11 @@ button.owl-dot span {
 	height: 18px;
 }
 
+button.owl-dot,
+button.owl-dot.active {
+	outline: none;
+}
+
 .banner-wrap {
 	text-align: center;
 	/* position: relative; */
@@ -230,7 +243,7 @@ button.owl-dot span {
 }
 
 .pad-t-b {
-	padding: 80px 0;
+	padding: 90px 0;
 }
 
 .bg-cover {
@@ -265,12 +278,18 @@ button.owl-dot span {
 	font-size: 72px;
 }
 
-.featured-title {
+.featured-title,
+.featured-title a {
 	color: #ffffff;
 	font-family: "Fira Sans";
 	font-size: 24px;
 	font-weight: 700;
 	margin-top: 16px;
+}
+
+.featured-title a:hover,
+.featured-title a:focus {
+	text-decoration: underline
 }
 
 .featured-box p {
@@ -314,6 +333,12 @@ p {
 	position: relative;
 }
 
+p a:hover,
+p a:focus {
+	text-decoration: underline;
+	color: #000000;
+}
+
 .upcoming-box:before {
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
 	position: absolute;
@@ -349,18 +374,30 @@ date {
 }
 
 .btn {
-	padding: 10px 22px;
+	padding: 10px 40px;
 	border-radius: 11px;
 	color: #ffffff !important;
-	/* font-family: "Fira Sans Medium"; */
+	font-family: "Fira Sans Medium";
 	font-size: 20px;
 	font-weight: 500;
+	transition: 0.7s;
 }
 
 .btn-yellow {
 	background-image: linear-gradient(-56deg, #fedd2b 0%, #fcb813 100%);
 }
 
+.btn.btn-blue:hover,
+.btn.btn-blue:focus {
+	background-image: linear-gradient(270deg, #9ccbe8 0%, #6babd2 100%);
+	box-shadow: 0 0 3px #0d679d;
+}
+
+.btn.btn-yellow:hover,
+.btn.btn-yellow:focus {
+	background-image: linear-gradient(-56deg, #fcb813 0%, #fedd2b 100%);
+	box-shadow: 0 0 3px #97810a;
+}
 
 h4.new-title {
 	color: #fcb813;
@@ -371,18 +408,16 @@ h4.new-title {
 
 .new-content p {
 	color: #000000;
-	font-family: "Fira Sans";
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
-	/* Text style for "Check out" */
 	font-family: "Fira Sans";
-	/*	font-weight: 700;*/
 	padding-bottom: 30px;
 }
 
 .new-content p a {
 	color: #6babd2;
+	font-weight: 700;
 }
 
 .btn-blue {
@@ -436,7 +471,7 @@ h4.new-title {
 }
 
 .box-wrapper {
-	width: 35%;
+	width: 36%;
 	float: right;
 	padding: 12px 0;
 	padding-right: 0;
@@ -445,8 +480,8 @@ h4.new-title {
 .new-wrapper {
 	float: left;
 	width: 65%;
-	padding-right: 51px;
-	padding-left: 10px;
+	padding-right: 70px;
+	padding-left: 20px;
 }
 
 .-blue {
@@ -524,8 +559,9 @@ h4.new-title {
 	color: black;
 	font-size: 14px;
 	font-weight: 400;
-	/* Text style for "630-766-70" */
 	font-family: "Fira Sans";
+	padding-bottom: 5px;
+	line-height: 18px;
 }
 
 footer .container {
@@ -590,6 +626,10 @@ form.newsletter-form {
 	border-color: black;
 	color: black;
 	background-color: rgba(248, 248, 248, 1);
+}
+
+.footer-logo {
+	padding-left: 15px;
 }
 
 .footer-logo img {
@@ -693,7 +733,7 @@ section.page-banner img {
 }
 
 .new-wrapper {
-	width: 65%;
+	width: 64%;
 }
 
 .history-wrap .box-content .box-title {
@@ -721,7 +761,7 @@ section.page-banner img {
 	width: 100%;
 }
 
-.history-wrap .box-wrapper ul li:before {
+.history-wrap .box-wrapper ul li a:before {
 	content: "\f105";
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -803,8 +843,8 @@ input#nf-field-4 {
 	font-weight: 500;
 	border: 0px !important;
 	position: absolute;
-	top: 33px;
-	right: 0;
+	top: -42px;
+	right: -175px;
 	cursor: pointer;
 	z-index: 9999;
 }
@@ -1119,4 +1159,46 @@ input.search-btn {
 input.search-btn:hover,
 input.search-btn:focus {
 	outline: none;
+}
+
+nf-fields-wrap > nf-field {
+	width: 100% !important;
+	float: left !important;
+}
+
+nf-fields-wrap {
+	width: 100%;
+	float: left;
+}
+
+.social a:hover,
+.social a:focus {
+	color: #55cdb7;
+}
+
+.item:hover .upcoming-box:before {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(10, 5, 5, 0.65) 100%);
+}
+
+.upcoming-wrap .item {
+	transition: 0.7s;
+}
+
+div#nf-error-2 {
+	position: absolute;
+	font-size: 14px;
+}
+
+.nf-error-msg {
+	font-size: 14px;
+	padding-left: 0;
+}
+
+.box a:hover,
+.box a:focus {
+	text-decoration: underline;
+}
+
+span.ninja-forms-req-symbol {
+	display: none;
 }

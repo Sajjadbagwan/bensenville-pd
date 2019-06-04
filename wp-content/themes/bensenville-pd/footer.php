@@ -24,7 +24,7 @@ if(!empty($service_section) && (!is_front_page())){?>
 <div class="feature-wrap featured-footer">
 	<div class="container">
 		<div class="row">
-		<?php foreach ($service_section as $services) {
+			<?php foreach ($service_section as $services) {
 		$service_title = $services['service_title'];
 		$service_icon = $services['service_icon'];
 		if(!empty($service_title)){
@@ -32,10 +32,10 @@ if(!empty($service_section) && (!is_front_page())){?>
 			<div class="col-w-20">
 				<div class="featured-footer-box">
 					<i class="fa fa-<?php echo $service_icon;?>"></i>
-					<h4 class="featured-title"><?php echo $service_title;?></h4>
+					<h4 class="featured-title"><a href="#"><?php echo $service_title;?></a></h4>
 				</div>
 			</div>
-		<?php } }  ?>
+			<?php } }  ?>
 
 		</div>
 	</div>
