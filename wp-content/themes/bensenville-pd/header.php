@@ -16,9 +16,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/ico" />
+
 	<?php wp_head(); ?>
 </head>
 
@@ -92,7 +95,7 @@
 
 								<?php if(!empty($youtube_link)){?><a target="_blank" href="<?php echo $youtube_link; ?>"><i class="fa fa-youtube"></i></a><?php } ?>
 
-								<?php if(!empty($instagram_link)){?><a target="_blank" href="<?php echo $instagram_link; ?>"><i class="fa fa-instagram"></i></a><?php } ?>
+								<?php if(!empty($instagram_link)){?><a target="_blank" href="<?php echo $instagram_link; ?>"><i class="fab fa-instagram"></i></a><?php } ?>
 							</div>
 							<div class="search-box">
 								<form class="search" method="" action="<?php echo home_url( '/' ); ?>">
