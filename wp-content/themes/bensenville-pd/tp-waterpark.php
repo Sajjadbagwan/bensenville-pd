@@ -24,21 +24,25 @@ if($parent_id != 0){
 	<div class="breadcrumb">
 		<div class="container">
 			<ul class="clearfix">
-			<?php if(!empty($parent_page)){?>
+				<?php if(!empty($parent_page)){?>
 				<li><a href="<?php echo $parent_page_link;?>"><?php echo $parent_page->post_title;?></a></li>
 				<span> > </span>
 				<li><a href="<?php echo $page_link;?>"><?php echo $page_title;?> </a></li>
-			<?php } else{?>
+				<?php } else{?>
 				<li><a href="<?php echo $page_link;?>"><?php echo $page_title;?> </a></li>
-		<?php } ?>
-		</ul>
-		<?php if(!empty($banner_logo)){?>
-		<div class="banner-logo">
-				<img src="<?php echo $banner_logo;?>" alt="">
-		</div>
-		<?php } ?>
+				<?php } ?>
+			</ul>
 		</div>
 	</div>
+	<?php if(!empty($banner_logo)){?>
+	<div class="banner-logo">
+		<div class="container">
+			<div class="banner-logo-inner">
+				<img src="<?php echo $banner_logo;?>" alt="">
+			</div>
+		</div>
+	</div>
+	<?php } ?>
 </section>
 
 
@@ -48,26 +52,26 @@ if($parent_id != 0){
 			<div class="new-wrapper">
 				<div class="new-content">
 					<?php while ( have_posts() ) : the_post(); ?>
-						<?php echo apply_filters('the_content',get_the_content()); ?>
+					<?php echo apply_filters('the_content',get_the_content()); ?>
 					<?php endwhile; ?>
 				</div>
 				<?php 
 				$slider = get_field('slider');
 				if($slider){?>
-					<div class="waterpark-slider">
-						<div class="owl-carousel owl-theme">
-							<?php foreach ($slider as $sliders) {
+				<div class="waterpark-slider">
+					<div class="owl-carousel owl-theme">
+						<?php foreach ($slider as $sliders) {
 								$slider_image_array = $sliders['slider_image'];
 								$slider_image = $slider_image_array['sizes']['waterpark_slider_image'];
 
 								if(!empty($slider_image)){
 							?>
-							<div class="item">
-								<img src="<?php echo $slider_image; ?>" alt="">
-							</div>
-							<?php } }  ?>	
+						<div class="item">
+							<img src="<?php echo $slider_image; ?>" alt="">
 						</div>
+						<?php } }  ?>
 					</div>
+				</div>
 				<?php } ?>
 			</div>
 			<div class="box-wrapper">
@@ -91,7 +95,7 @@ if($parent_id != 0){
 					</div>
 				</div>
 
-    			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+				<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
 			</div>
 		</div>
 	</div>

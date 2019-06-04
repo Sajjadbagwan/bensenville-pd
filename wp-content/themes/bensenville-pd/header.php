@@ -97,8 +97,8 @@
 								<form id="serach-form" role="search" action="<?php echo home_url(); ?>" method="get">
 
 									<input type="text" name="" class="form-control">
-
-									<i class="fa fa-search"></i>
+									<input type="submit" name="" class="">
+									<!--									<i class="fa fa-search"></i>-->
 								</form>
 							</div>
 						</div>
