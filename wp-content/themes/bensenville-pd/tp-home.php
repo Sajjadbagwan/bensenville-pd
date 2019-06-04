@@ -57,12 +57,20 @@ $service_section = get_field('service_section','option');
 				$service_title = $services['service_title'];
 				$service_description = $services['service_description'];
 				$service_icon = $services['service_icon'];
+				$service_link_type = $services['service_link_type'];
+				$service_internal_link = $services['service_internal_link'];
+				$service_external_link = $services['service_external_link'];
 				if(!empty($service_title) || !empty($service_description)){
 			?>
 			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="fa fa-<?php echo $service_icon;?>"></i>
-					<?php if(!empty($service_title)){?><h4 class="featured-title"><a href="#"><?php echo $service_title;?></a></h4><?php } ?>
+					<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
+						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
+					<?php } ?>
+					<?php if(!empty($service_title) && $service_link_type == 'External'){?>
+						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
+					<?php } ?>
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 				</div>
 			</div>
@@ -103,7 +111,7 @@ if(!empty($events)){
 
 						<date><?php echo $date;?></date>
 					</div>
-					<a href="#" class="link-over"></a>
+					<a href="<?php echo get_permalink($event->ID);?>" class="link-over"></a>
 				</div>
 				<a href="<?php echo get_permalink($event->ID);?>" class="link-over"></a>
 			</div>
@@ -165,7 +173,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 				<div class="box box-blue mar-t-50">
 					<h4 class="new-title">Field & Facility Updates…</h4>
 					<div class="detail-box">
-						<div class="item clearfix">
+						<div class="item clearfix close">
 							<h5>Bensenville Water Park</h5>
 							<span>closed for the season</span>
 						</div>
@@ -177,7 +185,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 							<h5>Fisher Farm</h5>
 							<span>Open</span>
 						</div>
-						<div class="item clearfix">
+						<div class="item clearfix close">
 							<h5>Water Park & Splash Pad</h5>
 							<span>closed for the season</span>
 						</div>
