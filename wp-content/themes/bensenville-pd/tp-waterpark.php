@@ -77,20 +77,13 @@ if($parent_id != 0){
 			<div class="box-wrapper">
 				<div class="box box-bg-gradient clearfix">
 					<div class="box-content">
-						<h5 class="box-title">About Us</h5>
+						<h5 class="box-title">Bensenville Water Park</h5>
 						<ul>
-							<li>Agency News</li>
-							<li>Agency Planning</li>
-							<li>Board of Commissioners</li>
-							<li>Board Meetings</li>
-							<li>Calendar of Events</li>
-							<li>Employment</li>
-							<li>Gift Certificates</li>
-							<li>inclusion/NEDSRA</li>
-							<li>Legal Requirements</li>
-							<li>Links & Community News</li>
-							<li>Our History</li>
-							<li>Policies & Forms</li>
+							<li><a href="#">General Information</a></li>
+							<li><a href="#">Learn to Swim Program</a></li>
+							<li><a href="#">Water Park Events</a></li>
+							<li><a href="#">Water Park Parties & Rentals</a></li>
+							<li><a href="#">Water Park Rates</a></li>
 						</ul>
 					</div>
 				</div>

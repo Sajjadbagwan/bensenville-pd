@@ -66,18 +66,18 @@ if($parent_id != 0){
 					<div class="box-content">
 						<h5 class="box-title">About Us</h5>
 						<ul>
-							<li>Agency News</li>
-							<li>Agency Planning</li>
-							<li>Board of Commissioners</li>
-							<li>Board Meetings</li>
-							<li>Calendar of Events</li>
-							<li>Employment</li>
-							<li>Gift Certificates</li>
-							<li>inclusion/NEDSRA</li>
-							<li>Legal Requirements</li>
-							<li>Links & Community News</li>
-							<li>Our History</li>
-							<li>Policies & Forms</li>
+							<li><a href="#">Agency News</a></li>
+							<li><a href="#">Agency Planning</a></li>
+							<li><a href="#">Board of Commissioners</a></li>
+							<li><a href="#">Board Meetings</a></li>
+							<li><a href="#">Calendar of Events</a></li>
+							<li><a href="#">Employment</a></li>
+							<li><a href="#">Gift Certificates</a></li>
+							<li><a href="#">inclusion/NEDSRA</a></li>
+							<li><a href="#">Legal Requirements</a></li>
+							<li><a href="#">Links & Community News</a></li>
+							<li><a href="#">Our History</a></li>
+							<li><a href="#">Policies & Forms</a></li>
 						</ul>
 					</div>
 				</div>
