@@ -103,6 +103,7 @@ if(!empty($events)){
 		<div class="title yellow-text">
 			<h3>Upcoming Events</h3>
 		</div>
+		<div class="row">
 		<div class="owl-carousel owl-theme">
 			<?php
 			foreach ($events as $event) {
@@ -117,8 +118,8 @@ if(!empty($events)){
 				$date = $startdate;
 			} ?>
 			<div class="item">
-				<div class="upcoming-box bg-cover equal-heigth" style="background-image: url('<?php echo $image[0]; ?>')">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-15x11.png">
+				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo $image[0]; ?>')">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-32x26.png">
 					<div class="upcoming-text">
 						<?php if(!empty($title)){?><h4 class="upcoming-title"><?php echo $title;?></h4><?php } ?>
 
@@ -130,6 +131,7 @@ if(!empty($events)){
 			</div>
 			<?php } ?>
 		</div>
+	</div>
 		<div class="btn-box text-right">
 			<a class="btn btn-yellow" href="<?php echo get_permalink(get_page_by_path('events/'));?>">View all Events in Calender</a>
 		</div>
