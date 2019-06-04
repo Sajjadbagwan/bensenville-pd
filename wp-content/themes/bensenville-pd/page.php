@@ -50,6 +50,11 @@ if($parent_id != 0){
 	<div class="container">
 		<div class="row">
 			<div class="new-wrapper">
+				<?php if(!empty($page_title)){?>
+				<div class="title">
+					<h3><?php echo $page_title;?></h3>
+				</div>
+				<?php } ?>
 				<div class="new-content">
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php echo apply_filters('the_content',get_the_content()); ?>
@@ -57,11 +62,7 @@ if($parent_id != 0){
 				</div>
 			</div>
 			<div class="box-wrapper">
-				<?php
-				$sidebar = get_field('sidebar');
-				$sidebar_option = $sidebar[0];
-				if($sidebar_option == 'Yes'){
-				?>
+				
 				<div class="box box-bg-gradient clearfix">
 					<div class="box-content">
 						<h5 class="box-title">About Us</h5>
@@ -82,7 +83,7 @@ if($parent_id != 0){
 					</div>
 				</div>
     			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
-			<?php } ?>
+			
 			</div>
 		</div>
 	</div>
