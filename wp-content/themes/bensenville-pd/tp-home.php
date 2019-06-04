@@ -57,14 +57,27 @@ $service_section = get_field('service_section','option');
 				$service_title = $services['service_title'];
 				$service_description = $services['service_description'];
 				$service_icon = $services['service_icon'];
-				$service_link_type = $services['service_link_type'];
+				if($service_icon == 'book'){
+					$icon_class ='fas fa-book';
+				}elseif ($service_icon == 'umbrella') {
+					$icon_class = 'fas fa-umbrella';	
+				}elseif ($service_icon == 'calendar') {
+					$icon_class = 'fas fa-calendar-alt';	
+				}elseif ($service_icon == 'map') {
+					$icon_class = 'far fa-map';	
+				}elseif ($service_icon == 'users') {
+					$icon_class = 'fas fa-users';	
+				}else{
+					$icon_class = '';	
+				}
+						$service_link_type = $services['service_link_type'];
 				$service_internal_link = $services['service_internal_link'];
 				$service_external_link = $services['service_external_link'];
 				if(!empty($service_title) || !empty($service_description)){
 			?>
 			<div class="col-w-20">
 				<div class="featured-box">
-					<i class="fa fa-<?php echo $service_icon;?>"></i>
+					<i class="<?php echo $icon_class;?>"></i>
 					<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
 					<?php } ?>
