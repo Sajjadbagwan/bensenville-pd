@@ -3,7 +3,7 @@ jQuery('.banner-wrap .owl-carousel').owlCarousel({
 	margin: 10,
 	nav: false,
 	dots: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	responsiveClass: true,
@@ -31,6 +31,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	margin: 0,
 	nav: true,
 	dots: false,
+	autoplay: true,
 	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 	autoplayHoverPause: true,
 	responsiveClass: true,
@@ -41,11 +42,11 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 		481: {
 			items: 1
 		},
-		769: {
+		767: {
 			items: 2
 		},
 		991: {
-			items: 2
+			items: 3
 		},
 		1000: {
 			items: 4
