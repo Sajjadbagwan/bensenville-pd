@@ -78,6 +78,7 @@ if($parent_id != 0){
 				<div class="box box-bg-gradient clearfix">
 					<div class="box-content">
 						<h5 class="box-title">Bensenville Water Park</h5>
+						<address><span>1100 W. Wood Street</span> Directions and Map</address>
 						<ul>
 							<li><a href="#">General Information</a></li>
 							<li><a href="#">Learn to Swim Program</a></li>

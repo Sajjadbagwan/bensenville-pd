@@ -101,6 +101,7 @@
 								<form class="search" method="" action="<?php echo home_url( '/' ); ?>">
 									<input type="text" name="s" class="form-control">
 									<input type="submit" name="" value="" class="search-btn">
+									<!-- <input type="submit" name="" value="" class="search-btn mobile-search-btn"> -->
 									<!--									<i class="fa fa-search"></i>-->
 								</form>
 							</div>

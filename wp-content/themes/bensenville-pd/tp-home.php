@@ -78,6 +78,7 @@ $service_section = get_field('service_section','option');
 			<div class="col-w-20">
 				<div class="featured-box">
 					<i class="<?php echo $icon_class;?>"></i>
+					<div class="featured-box-inner">
 					<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
 					<?php } ?>
@@ -85,6 +86,7 @@ $service_section = get_field('service_section','option');
 						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
 					<?php } ?>
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
+				</div>
 				</div>
 			</div>
 			<?php } } ?>
@@ -176,7 +178,7 @@ $bensenville_park_title = get_field('bensenville_park_title');
 					<?php } ?>
 					<?php endwhile; endif; ?>
 
-					<div class="btn-box text-left">
+					<div class="btn-box">
 						<a class="btn btn-blue" href="<?php echo get_permalink(get_option('page_for_posts'));?>">View more news Items</a>
 					</div>
 				</div>

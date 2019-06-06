@@ -69,7 +69,10 @@ if(!empty($service_section) && (!is_front_page())){?>
 			<div class="row">
 				<div class="footer-col-22">
 					<div class="footer-logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" alt=""><img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="footer-logo"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="footer-logo" class="desktop-logo">
+
+						<img src="<?php echo get_template_directory_uri(); ?>/images/footer-mobile-logo.svg" alt="footer-logo" class="mobile-logo"></a>
 						<?php if(!empty($logo_text)){?><p class="text-right"><?php echo $logo_text;?></p><?php } ?>
 					</div>
 				</div>
