@@ -12,7 +12,8 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<div class="container">
+				<div class="search-page main-content">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -46,7 +47,7 @@ get_header();
 
 		endif;
 		?>
-
+	</div></div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

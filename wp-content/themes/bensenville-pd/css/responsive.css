@@ -91,30 +91,31 @@
 	.header-left { border-bottom: 0; }
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
-	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 99999; }
+	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 1; }
 	.social-search { position: absolute; left: 15px; top: 23px; width: 100%; }
 	.search-box,
 	.social { display: none; }
-	.mobile-search { display: block; text-align: left; }
+	.mobile-search { display: block; text-align: left;    float: left; }
 	.mobile-search i { font-size: 38px; }
 	.menu-main_menu_left-container,
 	.mobile-menu .menu-main_menu_right-container { display: block; }
 	.main-navigation ul li { float: none; display: block; padding: 0; }
-	.main-navigation ul li a { padding: 0; }
+	.main-navigation ul li a { padding: 0;    font-weight: 300; }
 	.main-navigation .menu-inner { position: fixed; right: -250px; top: 0; height: 100%; width: 250px; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 19; background: #63b2cf; text-align: left; overflow: auto; margin: 0; overflow-x: hidden; padding: 0; }
 	.menu-open .main-navigation .menu-inner { right: 0; }
 	.site { position: relative; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; left: 0px; }
 	.menu-open .site { left: -250px; }
 	.main-navigation .menu-inner { padding-top: 53px; padding-left: 15px; }
 	.main-navigation .menu-inner ul li a,
-	.main-navigation .menu-inner .mobile-menu ul li a { color: white; padding: 10px 0; }
+	.main-navigation .menu-inner .mobile-menu ul li a { color: white; padding:0; font-weight: 300; }
+	.main-navigation ul li { padding: 10px 0; }
 	.mobile-menu { display: block; }
 	body .toggle-menu .fa-close,
 	body.menu-open .toggle-menu .fa-bars { display: none; }
 	body.menu-open .toggle-menu .fa-close,
 	body .toggle-menu .fa-bars { display: block; }
 	.search-open .search-box { display: block; width: 100%; position: absolute; left: -15px; right: 0; top: 70px; z-index: 99999; }
-	.col-md-2.logo-column { z-index: 99999; }
+	.col-md-2.logo-column { z-index: 1; }
 	.search-open .search-box .form-control { width: 100%; }
 	.history-wrap .box-wrapper { width: 100%; }
 	.history-wrap .new-wrapper { width: 100%; }
@@ -126,9 +127,12 @@
 	.child-open.child-trigger:after { transform: rotate(0deg); }
 	.menu li { position: relative; }
 	.menu { width: 90%; }
-	.box-wrapper { padding-top: 50px }
+	.box-wrapper { padding-top: 50px;padding-left: 0; }
 	.nf-form-layout form .nf-form-content { margin: 0 auto; }
 	.main-navigation .menu-inner  .menu li.current-menu-item a, .main-navigation .menu-inner .menu li.current_page_ancestor a, .main-navigation .menu-inner .menu li a:focus { color: #000 ; }
+	.waterpark-slider .owl-nav button span  { color: #fff; }
+	.item { padding: 0; border-radius: 0px; overflow: hidden;}
+
 
 }
 @media (max-width:800px) {
@@ -199,7 +203,8 @@
 	ul { margin-bottom: 0; }
 	ul li { font-size: 16px; line-height: 27px; }
 	.pad-t-b { padding: 30px 0; }
-	h4 { font-size: 20px; font-weight: 700; padding-top: 20px; }
+	h4 { font-size: 20px; font-weight: 700; padding-top: 10px; }
+	.history-wrap .box-content { padding: 0; }
 	p { font-size: 16px; font-weight: 400; line-height: 27px; }
 	.featured-title { padding-top: 0; margin-top: 0;     margin-bottom: 15px;}
 	.feature-wrap  {padding: 40px 0;}
@@ -243,5 +248,16 @@
 	.site-header:after {  right: 0; border-radius:3px 0 0 3px }
 	.error-404, .not-found { padding: 20px 0 50px; }
 	.error-404 .page-title, .not-found .page-title  { font-size: 26px; }
+	table { margin: 0 0 30px; }
+	.history-wrap .box { padding: 35px 25px; }
+	.featured-footer { padding: 15px 0; }
+	.featured-footer + footer { border-top: none; }
+	.featured-footer.feature-wrap .container {  padding: 0 15px;  }
+	.featured-footer-box .featured-title { font-size: 15px; }
+	.featured-footer-box i { font-size: 25px; }
+	.featured-footer-box { padding: 10px 0; }
+	.feature-wrap { background-image: linear-gradient(270deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 100%);
+}
+	.waterpark-slider .owl-nav button span { font-size: 16px; }
 
 }
