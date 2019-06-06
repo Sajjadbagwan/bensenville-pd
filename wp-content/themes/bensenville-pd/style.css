@@ -32,7 +32,7 @@ ul li { color: #000000; font-family: "Fira Sans"; font-size: 18px; font-weight: 
 
 
 
-header { width: 100%; z-index: 99; background-color: #fff; margin-bottom: 45px; }
+header.site-header { width: 100%; z-index: 99; background-color: #fff; margin-bottom: 45px; }
 .toggle-menu { display: none; }
 .header-left { text-align: right; }
 .header-right { text-align: left; }
@@ -316,8 +316,8 @@ ul.sub-menu li:hover > .sub-menu {  opacity: 1; }
 .history-wrap .box-content address { margin-bottom: 0; font-weight:600; font-size: 17px; color: #fff;    border-bottom: 3px solid rgba(255, 255, 255, 0.6);     padding-bottom: 10px; margin-bottom: 20px;}
 .history-wrap .box-content address span { font-weight: 300; font-style: italic; display: block; }
 
-.error-404 { padding: 150px 0 100px; }
-
+.error-404, .not-found { padding: 150px 0 120px; text-align: center;  }
+.main-content { padding: 50px 0; }
 .main-content .entry-header { margin-bottom: 0; }
 .main-content p { padding-bottom: 20px; }
 .main-content  h2.entry-title { font-size: 24px; line-height: 30px;  }
