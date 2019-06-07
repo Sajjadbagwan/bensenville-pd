@@ -38,7 +38,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost'){
 	/** The Database Collate type. Don't change this if in doubt. */
 	define( 'DB_COLLATE', '' );
 } else {
-	define('DB_NAME', 'bensenville-pd');
+	define('DB_NAME', 'bensenville');
 	define('DB_USER', 'developm_general');
 	define('DB_PASSWORD', 'Lw20$qpKFhTo');
 	define('DB_HOST', '173.236.133.20');	
