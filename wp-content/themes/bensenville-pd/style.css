@@ -272,7 +272,7 @@ span.ninja-forms-req-symbol { display: none; }
 
 /**SUBMENU**/
 ul.sub-menu li { float: none; }
-ul.sub-menu { position: absolute; top: 110px; z-index: 9999; background-color: white; padding: 0; box-shadow: 0 0 3px #eee; width: 200px; display: none; }
+ul.sub-menu { position: absolute; top: 110px; z-index: 9999; background-color: white; padding: 0; box-shadow: 0 0 3px #eee; width: 200px; opacity: 0; }
 ul.sub-menu li { position: relative; padding: 5px 15px; }
 ul.sub-menu li a { display: inline-block; font-size: 16px; padding: 0; }
 ul.sub-menu .sub-menu { opacity: 0; position: absolute; left: 200px; top: 0; }
@@ -341,3 +341,4 @@ blockquote p:before, blockquote p:after { display: inline-block; font-family: Fo
 blockquote p:before { content: '\f10d'; padding-right: 20px; }
 blockquote p:after { content: '\f10e';  padding-left: 20px; }
 
+.logo-column img { max-width: 132px; }
