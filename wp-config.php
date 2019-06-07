@@ -41,7 +41,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost'){
 	define('DB_NAME', 'bensenville-pd');
 	define('DB_USER', 'developm_general');
 	define('DB_PASSWORD', 'Lw20$qpKFhTo');
-	define('DB_HOST', 'localhost');	
+	define('DB_HOST', '173.236.133.20');	
 }
 /**#@+
  * Authentication Unique Keys and Salts.
