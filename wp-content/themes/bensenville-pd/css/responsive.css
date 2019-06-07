@@ -91,7 +91,7 @@
 	.header-left { border-bottom: 0; }
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
-	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 1; }
+	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 12; }
 	.social-search { position: absolute; left: 15px; top: 23px; width: 100%; }
 	.search-box,
 	.social { display: none; }
@@ -123,7 +123,7 @@
 	position: unset; background-color: transparent; box-shadow: 0 0 0; padding-left: 10px; width: 100%;  }
 	ul.sub-menu .sub-menu { padding-left: 20px !important; position: unset;		/*		display: block;*/ }
 	.child-trigger:after { content: '\f078'; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; color: white; right: 0; top: 0;    transform: rotate(-90deg); transition: all ease 0.5s; }
-	.child-trigger { display: inline-block; position: absolute; top: 15px; right: 0; }
+	.child-trigger { display: inline-block; position: absolute; top:9px; right: 0; }
 	.child-open.child-trigger:after { transform: rotate(0deg); }
 	.menu li { position: relative; }
 	.menu { width: 90%; }
@@ -261,5 +261,6 @@
 	.feature-wrap { background-image: linear-gradient(270deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 100%);
 }
 	.waterpark-slider .owl-nav button span { font-size: 16px; }
+	.footer { padding-bottom: 70px; }
 
 }
