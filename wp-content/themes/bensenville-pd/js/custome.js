@@ -37,7 +37,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	dots: false,
 	autoplay: true,
 	nav:(jQuery(".upcoming-wrap .owl-carousel .item").length > 4) ? true: false,
-	loop:(jQuery(".upcoming-wrap .owl-carousel .item").length > 4) ? true: false,
+	loop:(jQuery(".upcoming-wrap .owl-carousel .item").length > 4) ? true: false, 
 	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 	autoplayHoverPause: true,
 	responsiveClass: true,
@@ -59,6 +59,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 		}
 	}
 });
+
 
 
 jQuery('.waterpark-slider .owl-carousel').owlCarousel({
