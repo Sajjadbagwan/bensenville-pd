@@ -3,7 +3,6 @@
 get_header();
 $image_slider = get_field('image_slider');
 $service_section = get_field('service_section','option');
-
 ?>
 
 <?php if(!empty($image_slider)){?>
