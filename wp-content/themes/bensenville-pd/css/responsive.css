@@ -17,6 +17,8 @@
 	ul#menu-main_menu_right-1 { padding-left: 0; }
 	.newsletter { padding-left: 0; }
 	input#nf-field-4 { padding: 6px 23px !important; top: 41px; }
+	.footer-logo img { max-width: 207px; width: auto; }
+	#nf-field-2-wrap .nf-field-element { padding-right: 20px; }
 }
 @media (max-width:1199px) {
 	.menu li a { padding-right: 15px; font-size: 16px; }
