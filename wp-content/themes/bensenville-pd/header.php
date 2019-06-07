@@ -64,7 +64,7 @@
 
 					<div class="col-md-2 logo-column">
 						<a class="logo menu-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img class="svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" />
+							<img class="svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="" />
 						</a>
 					</div>
 

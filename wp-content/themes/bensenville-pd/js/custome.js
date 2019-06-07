@@ -36,6 +36,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	nav: true,
 	dots: false,
 	autoplay: true,
+	loop:(jQuery(".upcoming-wrap .owl-carousel .owl-item").length > 4) ? true: false,
 	navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 	autoplayHoverPause: true,
 	responsiveClass: true,

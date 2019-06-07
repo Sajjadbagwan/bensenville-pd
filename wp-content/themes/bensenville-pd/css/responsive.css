@@ -131,11 +131,12 @@
 	.nf-form-layout form .nf-form-content { margin: 0 auto; }
 	.main-navigation .menu-inner  .menu li.current-menu-item a, .main-navigation .menu-inner .menu li.current_page_ancestor a, .main-navigation .menu-inner .menu li a:focus { color: #000 ; }
 	.waterpark-slider .owl-nav button span  { color: #fff; }
-	.item { padding: 0; border-radius: 0px; overflow: hidden;}
+	.item { padding: 0; border-radius: 0px;}
 	.site-header { position: relative; z-index: 1 }
 	.site-header:before, .site-header:after { content: ''; height: 3px; width: 26%; position: absolute; bottom:70px; border-bottom: 3px solid #d5d5d5;z-index: -1;  }
 	.site-header:before { left: 0; border-radius: 0 3px 3px 0; }
 	.site-header:after {  right: 0; border-radius:3px 0 0 3px }
+	ul.sub-menu { opacity: 1; }
 
 
 }
