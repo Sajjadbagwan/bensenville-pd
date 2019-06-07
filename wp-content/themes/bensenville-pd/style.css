@@ -332,7 +332,7 @@ ul.sub-menu li:hover > .sub-menu {  opacity: 1; }
 
 .search-open:before, .menu-open:before  { content: ''; height:100%; width: 100%; position: absolute; background-color: rgba(0,0,0,0.5);     z-index: 2;}
 .search-open .site-content, .menu-open .site-content { position: relative; z-index: -1; }
-.search-open .site-header { z-index: unset; }
+.search-open .site-header,  .menu-open .site-header { z-index: unset; }
 blockquote {     padding: 30px 50px; }
 blockquote p { position: relative; display: inline-block; font-style: italic; }
 blockquote p:before, blockquote p:after { display: inline-block; font-family: FontAwesome; color: #fcb813;}
