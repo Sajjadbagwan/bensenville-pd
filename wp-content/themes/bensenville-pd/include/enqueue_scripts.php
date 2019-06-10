@@ -31,7 +31,7 @@ function bensenville_pd_scripts() {
 	
 	wp_enqueue_script( 'jquery.mCustomScrollbar.concatr', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.concat.min.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'custome', get_template_directory_uri() . '/js/custome.js', array(), '20151215', true );
+	wp_enqueue_script( 'custome', get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
 	
 	wp_enqueue_script( 'googletranslatore', get_template_directory_uri() . '/js/googletranslatore.js', array(), '20151215', true );
 

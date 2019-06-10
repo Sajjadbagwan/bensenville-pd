@@ -151,7 +151,7 @@
 	.upcoming-wrap .owl-prev { display: block; position: absolute; top: calc(50% - 36px); left: -20px; line-height: 30px; }
 	.upcoming-wrap .owl-carousel .owl-nav button { background-color: white !important; padding: 20px !important; border-radius: 5px; width: 61px; }
 	.upcoming-wrap .owl-next { top: calc(50% - 36px); right: -20px; }
-	.box.box-bg-gradient.clearfix { display: block; text-align: center; }
+	.box.box-bg-gradient.clearfix { display: block; text-align: center;    padding-right: 30px; }
 	.box.box-bg-gradient img { margin: 0 auto; text-align: center;    display: block; float: none; }
 	.box-content { text-align: left; padding-top: 35px; padding-left: 0; }
 	.box.box-blue.mar-t-50 { padding-right: 15px; }
