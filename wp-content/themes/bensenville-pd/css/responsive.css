@@ -331,4 +331,5 @@
 	.featured-box i { top: 20px; }
 	.featured-box { padding: 18px 0; }
 	.featured-title { margin-bottom: 15px; }
+	.wp-block-column { margin-bottom: 0 !important }
 }
