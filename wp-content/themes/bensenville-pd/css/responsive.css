@@ -12,13 +12,18 @@
 	.featured-box p { padding: 0 10px; }
 }
 @media (max-width:1366px) {
-	.menu li a { padding-right: 16px; }
+	.menu li a { padding-right: 35px;    font-size: 18px; }
 	.featured-box p { padding: 0 10px; }
 	ul#menu-main_menu_right-1 { padding-left: 0; }
 	.newsletter { padding-left: 0; }
 	input#nf-field-4 { padding: 6px 23px !important; top: 41px; }
 	.footer-logo img { max-width: 207px; width: auto; }
 	#nf-field-2-wrap .nf-field-element { /*padding-right: 20px;*/ }
+	.footer-contact-box { padding: 33px 6px 0 0; }
+}
+@media (max-width:1300px) {
+	.menu li a { padding-right: 25px; }
+	
 }
 @media (max-width:1199px) {
 	.menu li a { padding-right: 15px; font-size: 16px; }
@@ -49,6 +54,7 @@
 	.box { padding: 30px 15px 18px 30px; }
 	.upcoming-wrap .owl-next span:before { right: 0; }
 	.box img { padding-right: 10px;max-width: 110px; }
+	.box-history .box-title {     word-break: break-word; font-size: 20px; }
 
 }
 @media (max-width:991px) {
@@ -95,7 +101,7 @@
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
 	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 12; }
-	.social-search { position: absolute; left: 15px; top: 23px; width: 100%; }
+	.social-search { position: absolute; left: 15px; top: 23px; width: 100%;    z-index: 23; }
 	.search-box,
 	.social { display: none; }
 	.mobile-search { display: block; text-align: left;    float: left; }
@@ -141,6 +147,8 @@
 	.site-header:after {  right: 0; border-radius:3px 0 0 3px }
 	ul.sub-menu { opacity: 1; }
 	input#nf-field-2 { max-width: 100%; }
+	.nf-field-element { max-width: 100% !important; }
+
 
 
 }
@@ -187,7 +195,7 @@
 	.footer-col-12.pad-t-30 { padding-left: 0;     padding-top: 60px; }
 	p.copyright { width: 188px; margin: 0 auto; }
 	.new-content img { width: 100%; }
-	section.page-banner img { height: 100%; width: auto; }
+	section.page-banner img { height: 100%; width: 100%; }
 	section.page-banner { height: auto; }
 	section.page-banner > img { height: 200px; }
 	.baner-text { margin-top: 100px; }

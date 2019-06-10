@@ -22,8 +22,10 @@ $service_section = get_field('service_section','option');
 				
 
 			?>
-			<div class="item">
-				<img src="<?php echo $image;?>" alt="">
+			<div class="item " >
+				<div class="item-img bg-cover" style="background-image: url('<?php echo $image;?>');">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+				</div>
 				<?php if(!empty($slider_title) || !empty($slider_description)){ ?>
 				<div class="banner-text">
 					<div class="banner-text-iiner">
