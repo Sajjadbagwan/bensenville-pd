@@ -3,7 +3,8 @@
 /*@font-face { font-family: "Fira Sans Medium"; src: url('font/FiraSans-Medium.otf'); }
 @font-face { font-family: 'Fira Sans', sans-serif; src: url('font/FiraSans-Regular.otf'); }
 */
-
+* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+html { font-family: sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;  }
 body { }
 a { transition:all ease 0.5s;  -webkit-transition:all ease 0.5s;  -moz-transition:all ease 0.5s; display: inline-block; vertical-align: middle;     color: #6babd2; }
 a,
@@ -82,7 +83,7 @@ button.owl-dot.active { outline: none; }
 .col-w-20 { width: 20%; float: left; text-align: center; }
 .featured-box { color: white; padding: 70px 0 58px; }
 .featured-box i { font-size: 72px; }
-.featured-title  { font-size: 24px; font-weight: 700; margin-top: 20px;  }
+.featured-title  { font-size: 24px; font-weight: 500; margin-top: 20px;  }
 .featured-title,
 .featured-title a { color: #ffffff; font-family: 'Fira Sans', sans-serif; }
 .featured-title a:hover,
