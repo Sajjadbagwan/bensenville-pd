@@ -18,11 +18,16 @@
 	.newsletter { padding-left: 0; }
 	input#nf-field-4 { padding: 6px 23px !important; top: 41px; }
 	.footer-logo img { max-width: 207px; width: auto; }
-	#nf-field-2-wrap .nf-field-element { padding-right: 25px; }
+	
 	.footer-contact-box { padding: 33px 6px 0 0; }
+	.ninja-forms-field, .nf-field-element { max-width: 470px !important; }
+
+
 }
 @media (max-width:1300px) {
 	.menu li a { padding-right: 25px; }
+	#nf-field-2-wrap .nf-field-element { padding-right: 25px; }
+	.ninja-forms-field, .nf-field-element { max-width: 450px !important; }
 	
 }
 @media (max-width:1199px) {
@@ -56,6 +61,8 @@
 	.box img { padding-right: 10px;max-width: 110px; }
 	.box-history .box-title {     word-break: break-word; font-size: 20px; }
 	.featured-footer-box .featured-title { font-size: 18px; padding-right: 10px; }
+	.history-wrap .box { padding: 35px 30px; }
+	.ninja-forms-field, .nf-field-element { max-width: 360px !important; }
 
 }
 @media (max-width:991px) {
@@ -87,7 +94,9 @@
 	.footer-col-16,
 	.footer-col-22,
 	.footer-col-50,
-	.footer-col-12 { width: 100%; text-align: center;	padding-right: 0; padding-left: 0;	/* margin-bottom: 10px; */ }
+	.footer-col-12 { width: 100%; text-align: center;	padding-right: 0; padding-left: 0;	margin-right: 0; }
+	.footer-contact-box { padding-right: 0; }
+	.footer-logo p { padding-right: 0; }
 	.footer-logo img { width: 237px; }
 	.footer-logo { width: 250px; margin: 0 auto; padding: 15px 0 20px; }
 	input#nf-field-4 { top: 55px; }
@@ -96,13 +105,14 @@
 	/**MEnu**/
 	header.site-header { height: 220px; margin-bottom: 0; }
 	header.site-header .col-md-5,
-	header.site-header .col-md-2 { WIDTH: 100%; flex: 0 0 100%; max-width: 100%; }
+	header.site-header .col-md-2 { width:  100%; flex: 0 0 100%; max-width: 100%; }
 	.header-right,
 	.header-left { border-bottom: 0; }
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
 	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 12; }
-	.social-search { position: absolute; left: 15px; top: 23px; width: 100%;    z-index: 23; }
+	.social-search { position: absolute; left: 15px; top: 23px; width: 100%;}
+	.search-open  .social-search {     z-index: 23;  }
 	.search-box,
 	.social { display: none; }
 	.mobile-search { display: block; text-align: left;    float: left; }
@@ -147,8 +157,26 @@
 	.site-header:before { left: 0; border-radius: 0 3px 3px 0; }
 	.site-header:after {  right: 0; border-radius:3px 0 0 3px }
 	ul.sub-menu { opacity: 1; }
-	input#nf-field-2 { max-width: 100%; }
+	input#nf-field-2 { max-width: 100%;  float: left; max-width: 456px !important; }
 	.nf-field-element { max-width: 100% !important; }
+	.banner-text { max-width: 680px; }
+	.banner-text h3 { font-size: 24px; }
+	.baner-text-content a {     padding: 10px 30px; }
+
+
+	.toggle-menu {   display: inline-block !important;   cursor: pointer;  position: absolute;  top:12px; right: 15px;width:auto;   height:  34px;  padding: 0px;  border-radius: 5px; cursor: pointer; }
+
+	.toggle-menu{    position: absolute; position: absolute; display: block;  height: 25px;  width: 26px;  right: 15px;  top: 50%;transform: translatey(-50%); display:none;}
+	.toggle-menu i{ position:absolute; height:3px; display:block; width:28px; background:#000000;left: 0px;  top: 50%;transform: translatey(-50%); transition:all 0.2s linear}
+	.toggle-menu i:After,.toggle-menu i:before{ content:""; height:100%; width:100%; background:#000000; left:0; position:Absolute;}
+	.toggle-menu i:After{ top:8px; transform:rotate(0deg); transition:transform 0.2s linear,top  0.2s linear 0.2s;}
+	.toggle-menu i:before{top:-8px; transform:rotate(0deg); transition:transform 0.2s linear, top 0.2s linear 0.2s;}
+
+
+	.toggle-menu{ display:block; cursor:pointer;}
+	.mobile-open .toggle-menu i{ background:transparent; transition:all 0.2s linear;}
+	.mobile-open .toggle-menu i:after{transform:rotate(45deg); top:0; transition:all 0.2s linear, transform 0.2s linear 0.2s;}
+	.mobile-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 
 
 

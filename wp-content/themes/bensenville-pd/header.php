@@ -34,13 +34,11 @@
 					<div class="col-md-5 header-left">
 						<div class="toggle-menu">
 							<div class="toggle-line">
-								<!--
-								<span></span>
-								<span></span>
-								<span></span>
--->
-								<i class="fa fa-bars"></i>
-								<i class="fa fa-close"></i>
+								
+								<i></i>
+								
+								<!-- <i class="fa fa-bars"></i>
+								<i class="fa fa-close"></i> -->
 							</div>
 							<!--							<span class="text">Menu</span>-->
 						</div>

@@ -3,11 +3,11 @@ jQuery(document).ready(function () {
 
 
 jQuery('.banner-wrap .owl-carousel').owlCarousel({
-	loop: false,
+	loop: true,
 	margin: 10,
 	nav: false,
 	dots: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	responsiveClass: true,
