@@ -19,6 +19,7 @@
 	input#nf-field-4 { padding: 6px 23px !important; top: 41px; }
 	.footer-logo img { max-width: 207px; width: auto; }
 	#nf-field-2-wrap .nf-field-element { /*padding-right: 20px;*/ }
+	.footer-contact-box { padding: 33px 6px 0 0; }
 }
 @media (max-width:1300px) {
 	.menu li a { padding-right: 25px; }
@@ -53,6 +54,7 @@
 	.box { padding: 30px 15px 18px 30px; }
 	.upcoming-wrap .owl-next span:before { right: 0; }
 	.box img { padding-right: 10px;max-width: 110px; }
+	.box-history .box-title {     word-break: break-word; font-size: 20px; }
 
 }
 @media (max-width:991px) {
@@ -146,6 +148,7 @@
 	ul.sub-menu { opacity: 1; }
 	input#nf-field-2 { max-width: 100%; }
 	.nf-field-element { max-width: 100% !important; }
+
 
 
 }
