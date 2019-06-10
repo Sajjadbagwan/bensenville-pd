@@ -1,4 +1,4 @@
-f<?php
+<?php
 /**
  * The template for displaying the footer
  *
@@ -19,7 +19,9 @@ f<?php
 	$phone_number = get_field('phone_number','option');
 	$newsletter_shortcode = get_field('newsletter_shortcode','option');
 	$service_section = get_field('service_section','option');
-if(!empty($service_section) && (!is_front_page())){?>
+
+if(!empty($service_section) && (!is_front_page())){
+	?>
 
 <div class="feature-wrap featured-footer">
 	<div class="container">
