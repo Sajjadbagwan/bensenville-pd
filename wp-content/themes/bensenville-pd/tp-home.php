@@ -8,7 +8,7 @@ $service_section = get_field('service_section','option');
 <?php if(!empty($image_slider)){?>
 <section class="home-banner">
 	<div class="banner-wrap">
-		<div class="owl-carousel owl-theme">
+		<div class="owl-carousel owl-theme banner-slider">
 			<?php
 			foreach ($image_slider as $slider) {
 				$image_array = $slider['slider_image'];
@@ -96,7 +96,7 @@ $service_section = get_field('service_section','option');
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $today = date("Y-m-d H:i:s");
-$events = tribe_get_events(array('order'=> 'DESC','start_date' => $today ) );
+$events = tribe_get_events(array('order'=> 'ASC','start_date' => $today ) );
 if(!empty($events)){
 ?>
 <section class="upcoming-wrap pad-t-b">
@@ -119,7 +119,7 @@ if(!empty($events)){
 				$date = $startdate;
 			} ?>
 			<div class="item">
-				<div class="upcoming-box bg-cover" style="background-image: url('<?php echo $image[0]; ?>')">
+				<div class="upcoming-box bg-cover" style="background-image: url('<?php if(!empty($image)) { echo $image[0]; }else{ echo get_template_directory_uri(); ?>/images/no-image.png; <?php }?> ')">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-32x26.png">
 					<div class="upcoming-text">
 						<?php if(!empty($title)){?><h4 class="upcoming-title"><?php echo $title;?></h4><?php } ?>
