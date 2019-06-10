@@ -171,7 +171,8 @@ section.page-banner img { width: 100%; }
 .history-wrap .box-wrapper ul li { position: relative; color: white; color: #ffffff; font-family: 'Fira Sans', sans-serif; font-size: 17px; font-weight: 300; float: none; width: 100%;   }
 .history-wrap .box-wrapper ul li a:before { content: "\f105"; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 200; padding-right: 10px; }
 .history-wrap .box { padding: 36px 40px; }
-.history-wrap .box-content { padding-left: 0; width: 100%; border-bottom: 3px solid rgba(255, 255, 255, 0.6);     padding-bottom: 10px; }
+.history-wrap .box-content { padding-left: 0; width: 100%;   padding-bottom: 10px; }
+.history-wrap .box-blue .box-content {  border-bottom: 3px solid rgba(255, 255, 255, 0.6);   }
 .new-content img { margin-bottom: 30px; }
 .box-history { padding-bottom: 0px;    border-bottom: 3px solid rgba(255, 255, 255, 0.6);    align-items: center; }
 .box-history .box-title { padding-left: 15px; padding-right: 0; border-bottom: none; }
@@ -203,7 +204,7 @@ nf-fields-wrap:after { content: ''; display: block; clear: both; }
 #nf-field-2-wrap .nf-field-element { z-index: 9999; padding-right: 10px; }
 #nf-form-title-1 h3 { color: #000000; font-family: 'Fira Sans', sans-serif; font-size: 20px; font-weight: 700; line-height: 20px; margin-bottom: 0;  }
 .breadcrumb { position: absolute; width: 100%; top: 0; background-color: transparent; color: white; text-align: right; height: 100%; }
-.breadcrumb ul li { float: left; }
+.breadcrumb ul li { float: left;  margin-right: -30px;}
 .breadcrumb ul { display: inline-block; }
 .breadcrumb ul li a { color: #ffffff; font-family: 'Fira Sans', sans-serif; font-size: 23px; font-weight: 400; }
 .breadcrumb ul li:after { content: "\f105"; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 200; padding: 0 10px; font-size: 23px; }
