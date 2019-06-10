@@ -164,19 +164,19 @@
 	.baner-text-content a {     padding: 10px 30px; }
 
 
-	.toggle-menu {   display: inline-block !important;   cursor: pointer;  position: absolute;  top:12px; right: 15px;width:auto;   height:  34px;  padding: 0px;  border-radius: 5px; cursor: pointer; }
+	.toggle-menu {   display: inline-block !important;   cursor: pointer;  position: absolute;  right: 15px;width:auto;   height:  34px;  padding: 0px;  border-radius: 5px; cursor: pointer; }
 
-	.toggle-menu{    position: absolute; position: absolute; display: block;  height: 25px;  width: 26px;  right: 15px;  top: 50%;transform: translatey(-50%); display:none;}
-	.toggle-menu i{ position:absolute; height:3px; display:block; width:28px; background:#000000;left: 0px;  top: 50%;transform: translatey(-50%); transition:all 0.2s linear}
-	.toggle-menu i:After,.toggle-menu i:before{ content:""; height:100%; width:100%; background:#000000; left:0; position:Absolute;}
-	.toggle-menu i:After{ top:8px; transform:rotate(0deg); transition:transform 0.2s linear,top  0.2s linear 0.2s;}
-	.toggle-menu i:before{top:-8px; transform:rotate(0deg); transition:transform 0.2s linear, top 0.2s linear 0.2s;}
+	.toggle-menu{    position: absolute; position: absolute; display: block;  height: 25px;  width: 26px;  right: 15px;  display:none;}
+	.toggle-menu i{ position:absolute; height:4px; display:block; width:30px; background:#6babd2;left: 0px;  top: 50%;transform: translatey(-50%); transition:all 0.2s linear}
+	.toggle-menu i:After,.toggle-menu i:before{ content:""; height:100%; width:100%; background:#6babd2; left:0; position:Absolute;}
+	.toggle-menu i:After{ top:11px; transform:rotate(0deg); transition:transform 0.2s linear,top  0.2s linear 0.2s;}
+	.toggle-menu i:before{top:-11px; transform:rotate(0deg); transition:transform 0.2s linear, top 0.2s linear 0.2s;}
 
 
-	.toggle-menu{ display:block; cursor:pointer;}
-	.mobile-open .toggle-menu i{ background:transparent; transition:all 0.2s linear;}
-	.mobile-open .toggle-menu i:after{transform:rotate(45deg); top:0; transition:all 0.2s linear, transform 0.2s linear 0.2s;}
-	.mobile-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
+	.toggle-menu { display:block; cursor:pointer;}
+	.menu-open .toggle-menu i{ background:transparent; transition:all 0.2s linear;}
+	.menu-open .toggle-menu i:after{transform:rotate(45deg); top:0; transition:all 0.2s linear, transform 0.2s linear 0.2s;}
+	.menu-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 
 
 
@@ -185,16 +185,16 @@
 	input#nf-field-4 { top: 90px; }
 }
 @media (max-width:767px) {
-	.upcoming-wrap .owl-prev { display: block; position: absolute; top: calc(50% - 36px); left: -20px; line-height: 30px; }
-	.upcoming-wrap .owl-carousel .owl-nav button { background-color: white !important; padding: 20px !important; border-radius: 5px; width: 61px; }
-	.upcoming-wrap .owl-next { top: calc(50% - 36px); right: -20px; }
-	.box.box-bg-gradient.clearfix { display: block; text-align: center;    padding-right: 30px; }
-	.box.box-bg-gradient img { margin: 0 auto; text-align: center;    display: block; float: none; }
+	.upcoming-wrap .owl-prev { display: block; position: absolute; left: -20px; line-height: 30px; }
+	.upcoming-wrap .owl-carousel .owl-nav button { background-color: white !important; padding: 20px !important; border-radius: 5px; width: 61px;top: 50%; transform: translateY(-50%);  }
+	.upcoming-wrap .owl-next  {right: -20px;  }
+	.box.box-bg-gradient.clearfix { display: block; text-align: center;    padding-right: 24px; }
+	.box.box-bg-gradient img { margin: 0 auto; text-align: center;    display: block; float: none;     padding: 0;}
 	.box-content { text-align: left; padding-top: 35px; padding-left: 0; }
 	.box.box-blue.mar-t-50 { padding-right: 15px; }
 	.featured-box { text-align: left; position: relative; }
 	.col-w-20 { width: 100%; text-align: left; }
-	.featured-box i { width: 80px; float: left;font-size: 45px;     top: 20px; position: relative; text-align: center;  }
+	.featured-box i { width: 80px; float: left;font-size: 45px;     top: 10px; position: relative; text-align: center;  }
 	
 	.featured-box p { padding:0;line-height: 24px; font-size: 17px; }
 	.featured-box .featured-box-inner  {    float: left; overflow: hidden; width: calc(100% - 90px) ;     padding-left: 5px;}
@@ -210,9 +210,9 @@
 	.featured-title { font-size: 24px; }
 	
 	
-	.featured-box { padding: 18px 0; clear: both;     float: left; width: 100%; }
+	.featured-box { padding: 14px 0; clear: both;     float: left; width: 100%; }
 	.title h3 { font-family: "Fira Sans"; font-size: 24px; font-weight: 700; text-align: center; line-height: 29px; }
-	.btn { font-size: 17px; font-weight: 500; }
+	.btn { font-size: 17px; }
 	h4.new-title a { font-size: 20px; font-weight: 700; }
 	.new-content p,
 	.new-content p a { font-size: 16px; line-height: 26px; }
@@ -231,7 +231,7 @@
 	.banner-text {		/* margin-top: 119px; */ }
 	.banner-wrap .item img { width: auto; height: 240px; }
 	.banner-text { position: unset; display: block; width: 100%; transform: skew(0deg, 0deg); background-color: #eeeeee47; }
-	.banner-text-iiner h3 { font-size: 22px; font-weight: 700;		/* Text style for "Through Ap" */ font-family: "Fira Sans"; font-weight: 400; }
+	.banner-text-iiner h3 { font-size: 22px; font-weight: 700;		/* Text style for "Through Ap" */ font-family: "Fira Sans"; font-weight: 400; text-transform: none; }
 	.baner-text-content p { color: #000000; font-family: "Fira Sans"; font-size: 20px; font-weight: 400; display: block;     padding: 0px 30px;}
 	.baner-text-content a { font-size: 17px; font-weight: 400; margin-top: 20px;    max-width: 207px;
     text-align: center;  padding: 0; height: 48px; line-height: 46px; width: 100%; }
@@ -249,10 +249,10 @@
 	ul { margin-bottom: 0; }
 	ul li { font-size: 16px; line-height: 27px; }
 	.pad-t-b { padding: 30px 0; }
-	h4 { font-size: 20px; font-weight: 700; padding-top: 10px; }
+	h4 { font-size: 20px; font-weight: 700; padding-top: 20px; }
 	.history-wrap .box-content { padding: 0; }
 	p { font-size: 16px; font-weight: 400; line-height: 27px; }
-	.featured-title { padding-top: 0; margin-top: 0;     margin-bottom: 15px;}
+	.featured-title { padding-top: 0; margin-top: 0;     margin-bottom: 10px;}
 	.feature-wrap  {padding: 40px 0;}
 	.feature-wrap .container { padding: 0; }
 	.title h3 { text-align: left; }
@@ -284,7 +284,7 @@
     background-repeat: no-repeat; background-position: -290px 0; background-size: cover;     padding: 20px 0 50px;
     margin: 5px 0 0; }
 	.banner-text:before { display: none; }
-	.banner-text-iiner h3 span { font-weight: bold;  display: block; }
+	.banner-text-iiner h3 span { font-weight: bold;  display: block; text-transform: uppercase; }
 	.baner-text-content { padding-top: 5px; }
 	button.owl-dot span { height: 16px; width: 16px; display: inline-block; padding: 0; }
 
@@ -300,9 +300,35 @@
 	.featured-footer-box .featured-title { font-size: 15px; }
 	.featured-footer-box i { font-size: 25px; }
 	.featured-footer-box { padding: 10px 0; }
-	.feature-wrap { background-image: linear-gradient(270deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 100%); }
+	.feature-wrap {  
+		    background-image: linear-gradient(-35deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 52%, #5dae54 100%);
+	 }
 	.waterpark-slider .owl-nav button span { font-size: 16px; }
 	.footer { padding-bottom: 70px; } 
 	#nf-field-2-wrap .nf-field-element {z-index: 9999; padding-right: 0; width: 100%; max-width: 100% !important; }
+	.banner-wrap { margin-bottom: 48px; }
 
+	.btn-yellow:before { background-image: linear-gradient(-56deg, #f2ce0f 0%, rgba(255, 193, 7, 0.94) 23%, #fcb813 100%); }
+	.btn-blue:before { background-image: linear-gradient(270deg, #6babd2 0%, #9ccbe8 100%); }
+	.btn { padding: 12px 36px; }
+	.featured-footer.feature-wrap { background-image: linear-gradient(-86deg, #6babd2 -72%, #43d1c6 35%, #6dcaa6 100%); }
+	.upcoming-wrap  { padding: 52px 0 60px; }
+	.upcoming-wrap  .title h3 { text-align: center; }
+	.nf-after-field .nf-error-msg { margin-right: 0; }
+	.upcoming-wrap .btn-box.text-right { text-align: center !important;  }
+	.new-wrapper .btn-box { margin-top: 20px; }
+	.new-content ul , .new-content ol { padding-top: 0px; }
+	.waterpark-slider { padding-top: 40px; }
+	.waterpark-slider .owl-nav .owl-next:before, .waterpark-slider .owl-nav .owl-prev:before { height: 20px; width: 10px; }
+	.waterpark-slider .owl-nav .owl-prev { left: 10px; }
+	.waterpark-slider .owl-nav .owl-next { right: 10px; }
+	.history-wrap { background: none !important; padding-top: 70px; }
+	.history-wrap .box-blue .box-content { border-bottom: none; padding-bottom: 0; }
+	.wp-block-column { margin-bottom: 0 !important }
+}
+
+@media (max-width:580px) {
+	.featured-box i { top: 20px; }
+	.featured-box { padding: 18px 0; }
+	.featured-title { margin-bottom: 15px; }
 }
