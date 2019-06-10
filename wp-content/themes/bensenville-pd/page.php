@@ -29,7 +29,11 @@ if($parent_id != 0){
 }
 ?>
 <section class="page-banner">
-	<img src="<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image; } ?>" alt="">
+	
+	<div class="page-banner-img bg-cover" style="background-image: url('<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image; } ?>');">
+		
+		<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+	</div>
 	<div class="breadcrumb">
 		<div class="container">
 			<ul class="clearfix">

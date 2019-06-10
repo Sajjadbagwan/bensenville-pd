@@ -132,7 +132,7 @@ h4.new-title { color: #fcb813; font-family: 'Fira Sans', sans-serif; font-size: 
 .footer p { color: black; font-size: 14px; font-weight: 400; font-family: 'Fira Sans', sans-serif; padding-bottom: 5px; line-height: 18px; }
 footer .container { border-top: 3px solid #d8d8d8; padding-top: 45px; border-radius: 2px; }
 .footer { padding: 0px 0 70px; }
-.home-footer { padding-bottom:  143px; }
+.home .footer { padding-bottom:  143px; }
 .footer-contact-box a { font-size: 14px;	/* Text style for "630-766-70" */ font-family: 'Fira Sans', sans-serif; font-weight: 700; color: #000000; padding-top: 7px; display: block; }
 .footer-contact-box a:hover { color: #55cdb7; }
 
@@ -388,3 +388,11 @@ select::-ms-expand { display: none; }
 
 input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 
+.upcoming-wrap .owl-carousel .owl-stage { margin: 0 auto; }
+
+.site-content { position: relative; overflow: hidden; }
+
+.nf-field-element { width: 100% !important; padding-right: 0; max-width: 100% !important;}
+.ninja-forms-field { max-width: 100%; }
+#nf-field-2-wrap .nf-field-element { padding-right:0px; }
+.field-wrap.email-wrap { padding-right: 150px; }

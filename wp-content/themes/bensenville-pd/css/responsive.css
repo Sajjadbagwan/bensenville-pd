@@ -21,14 +21,13 @@
 	.footer-logo img { max-width: 207px; width: auto; }
 	
 	.footer-contact-box { padding: 33px 6px 0 0; }
-	.ninja-forms-field, .nf-field-element { max-width: 470px !important; }
+	.field-wrap.email-wrap { padding-right: 125px; }
 
 
 }
 @media (max-width:1300px) {
 	.menu li a { padding-right: 25px; }
-	#nf-field-2-wrap .nf-field-element { padding-right: 25px; }
-	.ninja-forms-field, .nf-field-element { max-width: 450px !important; }
+	
 	
 }
 @media (max-width:1199px) {
@@ -38,7 +37,7 @@
 	.search-box .form-control { width: 200px; }
 	.box-bg-gradient { display: block; }
 	.box-content { padding-left: 0; padding-top: 10px; }
-	input#nf-field-2 {    width: 100%; margin-right: 20px; max-width: 330px;} 
+	input#nf-field-2 {    width: 100%; } 
 	.footer-logo img { width: 100%; }
 	.footer-col-22 { width: 16%; margin-right: 1.5%; }
 	.footer-logo p { padding-right: 15px; }
@@ -101,7 +100,7 @@
 	.footer-logo img { width: 237px; }
 	.footer-logo { width: 250px; margin: 0 auto; padding: 15px 0 20px; }
 	input#nf-field-4 { top: 55px; }
-	input#nf-field-2 { width: 442px; }
+
 
 	/**MEnu**/
 	header.site-header { height: 220px; margin-bottom: 0; }
@@ -111,7 +110,7 @@
 	.header-left { border-bottom: 0; }
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
-	.toggle-menu { position: absolute; right: 15px; top: 65px; z-index: 12; }
+	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 12; }
 	.social-search { position: absolute; left: 15px; top: 23px; width: 100%;}
 	.search-open  .social-search {     z-index: 23;  }
 	.search-box,
@@ -158,7 +157,7 @@
 	.site-header:before { left: 0; border-radius: 0 3px 3px 0; }
 	.site-header:after {  right: 0; border-radius:3px 0 0 3px }
 	ul.sub-menu { opacity: 1; }
-	input#nf-field-2 { max-width: 100%;  float: left; max-width: 456px !important; }
+	input#nf-field-2 { max-width: 100% !important;  float: left; }
 	.nf-field-element { max-width: 100% !important; }
 	.banner-text { max-width: 680px; }
 	.banner-text h3 { font-size: 24px; }
@@ -178,7 +177,7 @@
 	.menu-open .toggle-menu i{ background:transparent; transition:all 0.2s linear;}
 	.menu-open .toggle-menu i:after{transform:rotate(45deg); top:0; transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 	.menu-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
-
+	.home .footer { padding-bottom: 83px; }
 
 
 }
@@ -219,7 +218,7 @@
 	.new-content p a { font-size: 16px; line-height: 26px; }
 	footer .container { padding-top: 0; }
 	.footer-logo p { padding-right: 0; text-align: center !important; padding-bottom: 0;     padding-top: 10px;     font-style: italic; }
-	.footer-contact-box p { width: 200px; margin: 0 auto; padding-bottom: 0; }
+	.footer-contact-box p { width: 200px; margin: 0 auto; padding-bottom: 0;     padding: 0 10px;}
 	.nf-field-label { margin-bottom: 0 !important; width: auto !important; }
 	.nf-field-description p { padding-bottom: 20px; }
 	.footer-col-12.pad-t-30 { padding-left: 0;     padding-top: 60px; }
@@ -305,7 +304,7 @@
 		    background-image: linear-gradient(-35deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 52%, #5dae54 100%);
 	 }
 	.waterpark-slider .owl-nav button span { font-size: 16px; }
-	.footer { padding-bottom: 70px; } 
+	.footer, .home .footer { padding-bottom: 70px; } 
 	#nf-field-2-wrap .nf-field-element {z-index: 9999; padding-right: 0; width: 100%; max-width: 100% !important; }
 	.banner-wrap { margin-bottom: 48px; }
 
@@ -326,6 +325,7 @@
 	.history-wrap { background: none !important; padding-top: 70px; }
 	.history-wrap .box-blue .box-content { border-bottom: none; padding-bottom: 0; }
 	.wp-block-column { margin-bottom: 0 !important }
+	.home .footer { padding-bottom: 70px; }
 }
 
 @media (max-width:580px) {
