@@ -111,7 +111,7 @@
 	.header-left { border-bottom: 0; }
 	.col-md-2.logo-column { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 8px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 	a.logo.menu-logo { width: auto; text-align: center; left: 50%; margin-left: 0; position: absolute; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-color: #fff; }
-	.toggle-menu { position: absolute; right: 15px; top: 60px; z-index: 12; }
+	.toggle-menu { position: absolute; right: 15px; top: 65px; z-index: 12; }
 	.social-search { position: absolute; left: 15px; top: 23px; width: 100%;}
 	.search-open  .social-search {     z-index: 23;  }
 	.search-box,
