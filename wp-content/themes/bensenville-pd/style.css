@@ -381,4 +381,5 @@ select::-ms-expand { display: none; }
 
 .new-content ul , .new-content ol { padding-top: 20px; }
 .waterpark-slider { padding-top: 25px }
-.featured-footer {  }
+.featured-footer.feature-wrap .row {     align-items: unset; justify-content: unset; text-align: left; }
+.featured-footer-box .featured-title { text-align: left; }

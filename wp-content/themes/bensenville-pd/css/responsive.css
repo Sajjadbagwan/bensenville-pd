@@ -18,7 +18,7 @@
 	.newsletter { padding-left: 0; }
 	input#nf-field-4 { padding: 6px 23px !important; top: 41px; }
 	.footer-logo img { max-width: 207px; width: auto; }
-	#nf-field-2-wrap .nf-field-element { /*padding-right: 20px;*/ }
+	#nf-field-2-wrap .nf-field-element { padding-right: 25px; }
 	.footer-contact-box { padding: 33px 6px 0 0; }
 }
 @media (max-width:1300px) {
@@ -55,6 +55,7 @@
 	.upcoming-wrap .owl-next span:before { right: 0; }
 	.box img { padding-right: 10px;max-width: 110px; }
 	.box-history .box-title {     word-break: break-word; font-size: 20px; }
+	.featured-footer-box .featured-title { font-size: 18px; padding-right: 10px; }
 
 }
 @media (max-width:991px) {
