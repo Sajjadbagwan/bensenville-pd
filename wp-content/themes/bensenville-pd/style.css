@@ -359,3 +359,4 @@ blockquote p:after { content: '\f10e';  padding-left: 20px; }
 .new-content ul { list-style: none; margin: 0; padding: 0; }
 .new-content ul li { position: relative; padding-left: 10px; }
 .new-content ul li:before { content: '.'; position: absolute; top: 0; line-height: 1; left: 0; }
+.nf-pass.field-wrap .nf-field-element:after { display: none; }
