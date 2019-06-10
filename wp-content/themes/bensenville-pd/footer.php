@@ -43,20 +43,24 @@ if(!empty($service_section) && (!is_front_page())){?>
 		$service_link_type = $services['service_link_type'];
 		$service_internal_link = $services['service_internal_link'];
 		$service_external_link = $services['service_external_link'];
-		if(!empty($service_title)){
 		?>
-			<div class="col-w-20">
-				<div class="featured-footer-box">
-					<i class="<?php echo $icon_class; ?>"></i>
-					<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
+			<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
+				<div class="col-w-20">
+					<div class="featured-footer-box">
+						<i class="<?php echo $icon_class; ?>"></i>
 						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
-					<?php } ?>
-					<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
-						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
-					<?php } ?>
+					</div>
 				</div>
-			</div>
-			<?php } }  ?>
+			<?php } ?>
+			<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
+				<div class="col-w-20">
+					<div class="featured-footer-box">
+						<i class="<?php echo $icon_class; ?>"></i>
+						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
+					</div>
+				</div>
+			<?php } ?>
+		<?php }  ?>
 
 		</div>
 	</div>
