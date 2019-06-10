@@ -1,4 +1,4 @@
-<?php
+f<?php
 /**
  * The template for displaying the footer
  *
@@ -48,10 +48,10 @@ if(!empty($service_section) && (!is_front_page())){?>
 			<div class="col-w-20">
 				<div class="featured-footer-box">
 					<i class="<?php echo $icon_class; ?>"></i>
-					<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
+					<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
 					<?php } ?>
-					<?php if(!empty($service_title) && $service_link_type == 'External'){?>
+					<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
 					<?php } ?>
 				</div>

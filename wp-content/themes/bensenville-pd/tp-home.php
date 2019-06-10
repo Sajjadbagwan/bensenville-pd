@@ -31,10 +31,10 @@ $service_section = get_field('service_section','option');
 						<?php if(!empty($slider_description)){?>
 						<div class="baner-text-content">
 							<p><?php echo $slider_description;?></p>
-							<?php if(!empty($slider_button_title) && $slider_button_type=='Internal'){?>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='Internal' && !empty($slider_internal_link)){?>
 							<a href="<?php echo $slider_internal_link;?>" class="btn btn-blue"><?php echo $slider_button_title;?></a>
 							<?php } ?>
-							<?php if(!empty($slider_button_title) && $slider_button_type=='External'){?>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='External' && !empty($slider_external_link)) {?>
 							<a href="<?php echo $slider_external_link;?>" target="_blank" class="btn btn-blue"><?php echo $slider_button_title;?></a>
 							<?php } ?>
 						</div>
@@ -78,10 +78,10 @@ $service_section = get_field('service_section','option');
 				<div class="featured-box">
 					<i class="<?php echo $icon_class;?>"></i>
 					<div class="featured-box-inner">
-					<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
+					<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_internal_link;?>"><?php echo $service_title;?></a></h4>
 					<?php } ?>
-					<?php if(!empty($service_title) && $service_link_type == 'External'){?>
+					<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
 						<h4 class="featured-title"> <a href="<?php echo $service_external_link;?>" target="_blank"><?php echo $service_title;?></a></h4>
 					<?php } ?>
 					<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
