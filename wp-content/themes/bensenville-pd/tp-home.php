@@ -33,10 +33,10 @@ $service_section = get_field('service_section','option');
 						<?php if(!empty($slider_description)){?>
 						<div class="baner-text-content">
 							<p><?php echo $slider_description;?></p>
-							<?php if(!empty($slider_button_title) && $slider_button_type=='Internal'){?>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='Internal' && !empty($slider_internal_link)){?>
 							<a href="<?php echo $slider_internal_link;?>" class="btn btn-blue"><?php echo $slider_button_title;?></a>
 							<?php } ?>
-							<?php if(!empty($slider_button_title) && $slider_button_type=='External'){?>
+							<?php if(!empty($slider_button_title) && $slider_button_type=='External' && !empty($slider_external_link)) {?>
 							<a href="<?php echo $slider_external_link;?>" target="_blank" class="btn btn-blue"><?php echo $slider_button_title;?></a>
 							<?php } ?>
 						</div>

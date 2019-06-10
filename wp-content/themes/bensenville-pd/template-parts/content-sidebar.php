@@ -23,10 +23,10 @@
 			$winter_spring_internal_link = $winter_spring_link['winter_spring_internal_link'];
 			$winter_spring_external_link = $winter_spring_link['winter_spring_external_link'];
 		?>
-		<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='Internal'){?>
+		<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='Internal' && !empty($winter_spring_internal_link)){?>
 			<a href="<?php echo $winter_spring_internal_link;?>" class="box-link"><i class="fa fa-angle-right"></i> <?php echo $winter_spring_link_title;?></a>
 		<?php } ?>
-		<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='External'){?>
+		<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='External' && !empty($winter_spring_external_link)){?>
 			<a href="<?php echo $winter_spring_external_link;?>" class="box-link" target="_blank"><i class="fa fa-angle-right"></i> <?php echo $winter_spring_link_title;?></a>
 		<?php } ?>
 		<?php 	}
@@ -53,10 +53,10 @@
 				$winter_spring_internal_link = $winter_spring_link['winter_spring_internal_link'];
 				$winter_spring_external_link = $winter_spring_link['winter_spring_external_link'];
 			?>
-			<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='Internal'){?>
+			<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='Internal' && !empty($winter_spring_internal_link)){?>
 				<a href="<?php echo $winter_spring_internal_link;?>" class="box-link"><i class="fa fa-angle-right"></i> <?php echo $winter_spring_link_title;?></a>
 			<?php } ?>
-			<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='External'){?>
+			<?php if(!empty($winter_spring_link_title) && $winter_spring_link_type=='External' && !empty($winter_spring_external_link)){?>
 				<a href="<?php echo $winter_spring_external_link;?>" class="box-link" target="_blank"><i class="fa fa-angle-right"></i> <?php echo $winter_spring_link_title;?></a>
 			<?php } ?>
 			<?php 	} } ?>
