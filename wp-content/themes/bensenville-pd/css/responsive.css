@@ -307,7 +307,7 @@
 	.featured-footer + footer { border-top: none; }
 	.featured-footer.feature-wrap .container {  padding: 0 15px;  }
 	.featured-footer-box .featured-title { font-size: 15px; }
-	.featured-footer-box i { font-size: 25px; }
+	.featured-footer-box i { font-size: 25px;    width: 32px; text-align: center; }
 	.featured-footer-box { padding: 10px 0; }
 	.feature-wrap {  
 		    background-image: linear-gradient(-35deg, #6babd2 0%, #43d1c6 35%, #6dcaa6 52%, #5dae54 100%);
@@ -336,6 +336,7 @@
 	.wp-block-column { margin-bottom: 0 !important }
 	.home .footer { padding-bottom: 70px; }
 	.field-wrap.email-wrap {padding-right: 0;}
+	.footer-logo p { display: block; }
 
 }
 

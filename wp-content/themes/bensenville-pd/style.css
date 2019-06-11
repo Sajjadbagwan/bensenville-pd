@@ -397,3 +397,4 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 .ninja-forms-field { max-width: 100%; }
 #nf-field-2-wrap .nf-field-element { padding-right:0px; }
 .field-wrap.email-wrap { padding-right: 150px; }
+.footer-logo p { display: none; }
