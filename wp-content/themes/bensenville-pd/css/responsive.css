@@ -44,7 +44,7 @@
 	.footer-col-50 { width: 48% }
 	.footer-col-16 { padding-right: 10px; padding-left: 10px; }
 	.banner-logo { bottom: 15px; }
-	.banner-logo-inner { width: 400px; }
+	.banner-logo-inner { width: 370px;    padding: 27px 60px; }
 	input#nf-field-4 { top: 80px; }
 	ul.sub-menu li a { font-size: 14px; }
 	ul.sub-menu li { padding: 0 10px; }
