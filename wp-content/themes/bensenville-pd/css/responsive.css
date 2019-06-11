@@ -326,6 +326,7 @@
 	.history-wrap .box-blue .box-content { border-bottom: none; padding-bottom: 0; }
 	.wp-block-column { margin-bottom: 0 !important }
 	.home .footer { padding-bottom: 70px; }
+
 }
 
 @media (max-width:580px) {
@@ -333,4 +334,5 @@
 	.featured-box { padding: 18px 0; }
 	.featured-title { margin-bottom: 15px; }
 	.wp-block-column { margin-bottom: 0 !important }
+	.upcoming-wrap .btn-box .btn { width: 100%; }
 }

@@ -43,16 +43,20 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 	responsiveClass: true,
 	responsive: {
 		0: {
-			items: 1
+			items: 1,
+			nav:true,
 		},
 		481: {
-			items: 1
+			items: 1,
+			nav:true,
 		},
 		767: {
-			items: 2
+			items: 2,
+			nav:true
 		},
 		991: {
-			items: 3
+			items: 3,
+			nav:(jQuery(".upcoming-wrap .owl-carousel .item").length > 3) ? true: false,
 		},
 		1000: {
 			items: 4
