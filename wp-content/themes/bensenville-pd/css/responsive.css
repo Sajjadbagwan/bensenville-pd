@@ -63,6 +63,8 @@
 	.featured-footer-box .featured-title { font-size: 18px; padding-right: 10px; }
 	.history-wrap .box { padding: 35px 30px; }
 	.ninja-forms-field, .nf-field-element { max-width: 360px !important; }
+	.box-bg-gradient .box-content{  padding-top: 0; }
+	.box-bg-gradient .box-content a { display: block; }
 
 }
 @media (max-width:991px) {
@@ -85,7 +87,7 @@
 	.search-box .form-control { width: 200px; }
 	.featured-box { padding: 30px 0; }
 	.pad-t-b { padding: 50px 0; }
-	.box-bg-gradient { display: flex; }
+	
 	.box-content { padding-left: 15px; padding-top: 0px; }
 	.footer-logo img { width: 100%; }
 	.footer-col-22 { width: 16%; margin-right: 1.5%; }
