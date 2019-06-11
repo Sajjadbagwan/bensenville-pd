@@ -398,3 +398,4 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 #nf-field-2-wrap .nf-field-element { padding-right:0px; }
 .field-wrap.email-wrap { padding-right: 150px; }
 .footer-logo p { display: none; }
+.new-content { color: #000000; font-size: 18px; font-weight: 400; line-height: 27px; font-family: 'Fira Sans', sans-serif; padding-bottom: 30px; }
