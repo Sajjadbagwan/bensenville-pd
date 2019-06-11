@@ -56,7 +56,7 @@ jQuery('.upcoming-wrap .owl-carousel').owlCarousel({
 		},
 		991: {
 			items: 3,
-			nav:(jQuery(".upcoming-wrap .owl-carousel .item").length > 4) ? true: false,
+			nav:(jQuery(".upcoming-wrap .owl-carousel .item").length > 3) ? true: false,
 		},
 		1000: {
 			items: 4
