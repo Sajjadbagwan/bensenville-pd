@@ -178,6 +178,7 @@
 	.menu-open .toggle-menu i:after{transform:rotate(45deg); top:0; transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 	.menu-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 	.home .footer { padding-bottom: 83px; }
+	.toggle-line { height: 30px; width: 30px;  }
 
 
 }
@@ -327,7 +328,7 @@
 	.wp-block-column { margin-bottom: 0 !important }
 	.home .footer { padding-bottom: 70px; }
 	.field-wrap.email-wrap {padding-right: 0;}
-	.toggle-line { height: 30px; width: 30px;  }
+
 }
 
 @media (max-width:580px) {
