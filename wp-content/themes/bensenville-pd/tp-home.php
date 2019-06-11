@@ -13,6 +13,8 @@ $service_section = get_field('service_section','option');
 			foreach ($image_slider as $slider) {
 				$image_array = $slider['slider_image'];
 				$image = $image_array['sizes']['home_slider_image'];
+				$moile_slider_image_array = $slider['moile_slider_image'];
+				$moile_slider_image = $moile_slider_image_array['sizes']['mobile_slider_image'];
 				$slider_title = $slider['slider_title'];
 				$slider_description = $slider['slider_description'];
 				$slider_button_title = $slider['slider_button_title'];
@@ -23,9 +25,15 @@ $service_section = get_field('service_section','option');
 
 			?>
 			<div class="item " >
+			<?php if(wp_is_mobile()){?>
+				<div class="item-img bg-cover" style="background-image: url('<?php echo $moile_slider_image;?>');">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+				</div>
+			<?php }else{ ?>
 				<div class="item-img bg-cover" style="background-image: url('<?php echo $image;?>');">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
 				</div>
+			<?php } ?>
 				<?php if(!empty($slider_title) || !empty($slider_description)){ ?>
 				<div class="banner-text">
 					<div class="banner-text-iiner">
