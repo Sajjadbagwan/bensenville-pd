@@ -192,7 +192,7 @@
 	.upcoming-wrap .owl-carousel .owl-nav button { background-color: white !important; padding: 20px !important; border-radius: 5px; width: 61px;top: 50%; transform: translateY(-50%);  }
 	.upcoming-wrap .owl-next  {right: -20px;  }
 	.box.box-bg-gradient.clearfix { display: block; text-align: center;    padding-right: 24px; }
-	.box.box-bg-gradient img { margin: 0 auto; text-align: center;    display: block; float: none;     padding: 0;}
+	.box.box-bg-gradient img { margin: 0 auto 20px; text-align: center;    display: block; float: none;     padding: 0;}
 	.box-content { text-align: left; padding-top: 35px; padding-left: 0; }
 	.box.box-blue.mar-t-50 { padding-right: 15px; }
 	.featured-box { text-align: left; position: relative; }
