@@ -31,9 +31,7 @@ if($parent_id != 0){
 				<li><a href="<?php echo $parent_page_link;?>"><?php echo $parent_page->post_title;?></a></li>
 				<span> > </span>
 				<li><a href="<?php echo $page_link;?>"><?php echo $page_title;?> </a></li>
-				<?php } else{?>
-				<li><a href="<?php echo $page_link;?>"><?php echo $page_title;?> </a></li>
-				<?php } ?>
+				<?php }?>
 			</ul>
 		</div>
 	</div>
