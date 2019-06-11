@@ -69,7 +69,7 @@
 	.footer-contact-box p { padding-right: 0; }
 	.banner-logo-inner:before {    transform: skew(5deg,0); border-radius: 60px;
 }
-
+	
 }
 @media (max-width:991px) {
 	.menu-main_menu_left-container,
@@ -186,6 +186,7 @@
 	.menu-open .toggle-menu i:before{ top:0; transform:rotate(-45deg); transition:all 0.2s linear, transform 0.2s linear 0.2s;}
 	.home .footer { padding-bottom: 83px; }
 	.toggle-line { height: 30px; width: 30px;  }
+	.banner-text:before { bottom: -56px; }
 
 
 }
