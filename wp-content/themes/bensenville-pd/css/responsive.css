@@ -13,7 +13,7 @@
 	.featured-box p { padding: 0 10px; }
 }
 @media (max-width:1366px) {
-	.menu li a { padding-right: 35px;    font-size: 18px; }
+	.menu li a { padding-right: 33px;  font-size: 18px; }
 	.featured-box p { padding: 0 10px; }
 	ul#menu-main_menu_right-1 { padding-left: 0; }
 	.newsletter { padding-left: 0; }
@@ -25,7 +25,7 @@
 
 
 }
-@media (max-width:1300px) {
+@media (max-width:1360px) {
 	.menu li a { padding-right: 25px; }
 	
 	
