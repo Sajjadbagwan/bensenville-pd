@@ -224,7 +224,7 @@
 	.title h3 { font-family: "Fira Sans"; font-size: 24px; font-weight: 700; text-align: center; line-height: 29px; }
 	.btn { font-size: 17px; }
 	h4.new-title a { font-size: 20px; font-weight: 700; }
-	.new-content p,
+	.new-content, .new-content p,
 	.new-content p a { font-size: 16px; line-height: 26px; }
 	footer .container { padding-top: 0; }
 	.footer-logo p { padding-right: 0; text-align: center !important; padding-bottom: 0;     padding-top: 10px;     font-style: italic; }
@@ -338,6 +338,7 @@
 	.home .footer { padding-bottom: 70px; }
 	.field-wrap.email-wrap {padding-right: 0;}
 	.footer-logo p { display: block; }
+	.gca-column { margin-bottom: 15px !important; }
 
 }
 
