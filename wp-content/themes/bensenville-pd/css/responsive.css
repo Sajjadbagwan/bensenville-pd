@@ -69,6 +69,7 @@
 	.footer-contact-box p { padding-right: 0; }
 	.banner-logo-inner:before {    transform: skew(5deg,0); border-radius: 60px;
 }
+	table { margin-bottom: 10px; }
 	
 }
 @media (max-width:991px) {
@@ -301,7 +302,7 @@
 	
 	.error-404, .not-found { padding: 20px 0 50px; }
 	.error-404 .page-title, .not-found .page-title  { font-size: 26px; }
-	table { margin:0 0 20px; }
+	table { margin:0 }
 	.history-wrap .box { padding: 35px 25px; }
 	.featured-footer { padding: 15px 0; }
 	.featured-footer + footer { border-top: none; }
