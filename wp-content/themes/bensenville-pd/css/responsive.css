@@ -39,9 +39,9 @@
 	.box-content { padding-left: 0; padding-top: 10px; }
 	input#nf-field-2 {    width: 100%; } 
 	.footer-logo img { width: 100%; }
-	.footer-col-22 { width: 16%; margin-right: 1.5%; }
-	.footer-logo p { padding-right: 15px; }
-	.footer-logo { padding-top: 30px; }
+	.footer-col-22 { width: 18%; margin-right: 1.5%;    padding: 0; }
+	.footer-logo {     padding-top: 15px; padding-left: 0; }
+	.footer-col-50 { width: 48% }
 	.banner-logo { bottom: 15px; }
 	.banner-logo-inner { width: 400px; }
 	input#nf-field-4 { top: 80px; }
@@ -65,6 +65,7 @@
 	.ninja-forms-field, .nf-field-element { max-width: 360px !important; }
 	.box-bg-gradient .box-content{  padding-top: 0; }
 	.box-bg-gradient .box-content a { display: block; }
+	.footer-contact-box p { padding-right: 0; }
 
 }
 @media (max-width:991px) {
@@ -97,11 +98,12 @@
 	.footer-col-22,
 	.footer-col-50,
 	.footer-col-12 { width: 100%; text-align: center;	padding-right: 0; padding-left: 0;	margin-right: 0; }
-	.footer-contact-box { padding-right: 0; }
+	.footer-contact-box { padding-right: 0;max-width: 200px; margin: 0 auto; }
 	.footer-logo p { padding-right: 0; }
 	.footer-logo img { width: 237px; }
 	.footer-logo { width: 250px; margin: 0 auto; padding: 15px 0 20px; }
 	input#nf-field-4 { top: 55px; }
+	.footer-contact-box p { padding-right: 0; }
 
 
 	/**MEnu**/
