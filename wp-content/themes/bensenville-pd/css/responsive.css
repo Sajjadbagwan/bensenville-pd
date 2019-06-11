@@ -327,7 +327,7 @@
 	.wp-block-column { margin-bottom: 0 !important }
 	.home .footer { padding-bottom: 70px; }
 	.field-wrap.email-wrap {padding-right: 0;}
-	.toggle-line { height: 30px; width: 30px; }
+	.toggle-line { height: 30px; width: 30px;  }
 }
 
 @media (max-width:580px) {
