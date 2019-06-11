@@ -10,7 +10,7 @@
 }
 @media (max-width:1500px) {
 	.menu li a { padding-right: 30px; }
-	.featured-box { padding: 70px 10px 58px }
+	.featured-box { padding: 70px 13px 58px }
 }
 @media (max-width:1366px) {
 	.menu li a { padding-right: 33px;  font-size: 18px; }
