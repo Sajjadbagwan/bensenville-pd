@@ -76,6 +76,10 @@ global $post;
 $post_type = get_post_type();
 if($post_type == 'tribe_events'){
 $content .= '<p><b>Recommended 400 * 300 Pixel</b></p>';
+}else if($post_type == "page" && get_page_template_slug() != 'tp-home.php' && get_page_template_slug() != 'tp-waterpark.php'){
+$content .= '<p><b>Recommended 1920 * 307 pixel</b></p>';
+}elseif(get_page_template_slug() == 'tp-waterpark.php'){
+$content .= '<p><b>Recommended 1920 * 595 pixel</b></p>';
 }
 return $content;
 }
