@@ -7,7 +7,7 @@ jQuery('.banner-wrap .owl-carousel').owlCarousel({
 	margin: 10,
 	nav: false,
 	dots: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	responsiveClass: true,
@@ -138,15 +138,15 @@ jQuery('.waterpark-slider .owl-carousel').owlCarousel({
 		event.stopPropagation();
 	});
 
-
+/*
 	jQuery(".touch .main-navigation ul li > a").on("click touchstart", function (event) {
 
 		if (!jQuery(this).parent().hasClass("open") && jQuery(this).parent().has("ul").length > 0) {
-			/*event.preventDefault();
-			event.stopPropagation();*/
-			/*jQuery(this).parent().addClass("open").siblings().removeClass("open");*/
+			event.preventDefault();
+			event.stopPropagation();
+			jQuery(this).parent().addClass("open").siblings().removeClass("open");
 		}
-	});
+	});*/
 
 	jQuery('.menu-item-has-children > a').after(' <div class="child-trigger"><i></i></div>');
 
