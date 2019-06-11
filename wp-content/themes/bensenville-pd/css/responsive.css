@@ -325,7 +325,7 @@
 	.upcoming-wrap .btn-box.text-right { text-align: center !important;  }
 	.new-wrapper .btn-box { margin-top: 20px; }
 	.new-content ul , .new-content ol { padding-top: 0px; }
-	.waterpark-slider { padding-top: 40px; }
+	.waterpark-slider { padding-top: 40px;    padding-bottom: 20px; }
 	.waterpark-slider .owl-nav .owl-next:before, .waterpark-slider .owl-nav .owl-prev:before { height: 20px; width: 10px; }
 	.waterpark-slider .owl-nav .owl-prev { left: 10px; }
 	.waterpark-slider .owl-nav .owl-next { right: 10px; }
