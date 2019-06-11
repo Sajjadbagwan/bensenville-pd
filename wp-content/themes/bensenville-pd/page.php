@@ -32,7 +32,7 @@ if($parent_id != 0){
 	
 	<div class="page-banner-img bg-cover" style="background-image: url('<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image; } ?>');">
 		
-		<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-24x4.png" alt="">
 	</div>
 	<div class="breadcrumb">
 		<div class="container">
