@@ -239,7 +239,7 @@
 	.owl-dots { left: calc(50% - 58px); }
 	section.page-banner .banner-logo img { width: 100%; }
 	.banner-logo { padding: 19px 0; width: 100%; position: relative; z-index: 99999; padding-bottom: 0; }
-	.banner-logo-inner { transform: rotate(0); width: 100%; padding: 18px 0 0; }
+	.banner-logo-inner { transform: rotate(0); width: 100%; padding: 60px 0 10px; }
 	.breadcrumb .container { width: 100% !important; margin: 0; padding: 0; }
 	section.page-banner .banner-logo img { width: 270px; }
 	.wp-block-column { flex-basis: auto; margin-bottom: 0; }
@@ -292,7 +292,7 @@
 	
 	.error-404, .not-found { padding: 20px 0 50px; }
 	.error-404 .page-title, .not-found .page-title  { font-size: 26px; }
-	table { margin: 0 0 30px; }
+	table { margin:0 0 20px; }
 	.history-wrap .box { padding: 35px 25px; }
 	.featured-footer { padding: 15px 0; }
 	.featured-footer + footer { border-top: none; }
@@ -327,6 +327,7 @@
 	.wp-block-column { margin-bottom: 0 !important }
 	.home .footer { padding-bottom: 70px; }
 	.field-wrap.email-wrap {padding-right: 0;}
+	.toggle-line { height: 30px; width: 30px; }
 }
 
 @media (max-width:580px) {
@@ -334,4 +335,5 @@
 	.featured-box { padding: 18px 0; }
 	.featured-title { margin-bottom: 15px; }
 	.wp-block-column { margin-bottom: 0 !important }
+	.page-banner-img { min-height: 155px; }
 }
