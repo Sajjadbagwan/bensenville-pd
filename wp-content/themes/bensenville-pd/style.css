@@ -255,9 +255,9 @@ h4.new-title a { color: #fcb813; }
 	*/ }
 
 
-.banner-logo-inner {  padding: 28px 82px; transform: rotate(3deg); text-align: center; width: 600px; position: relative; z-index: 1; }
+.banner-logo-inner {   text-align: left;  position: relative; z-index: 1; float: left; }
 /*.banner-logo-inner:before { content: ''; height: 100%; width: 100%;    transform: skew(6deg,0); background-color: rgba(255, 255, 255, 0.74); position: absolute; top: 0; border-radius: 100px; left: 0; right: 0; margin: 0 auto; z-index: -1;}*/
-.banner-logo-inner img { width: auto; max-width: 416px; }
+.page-banner .banner-logo .banner-logo-inner img { width: auto; max-width: 416px; }
 .breadcrumb ul li { list-style-type: none; width: auto; }
 .breadcrumb ul li:after { color: white; }
 table tr td {	/*	border-bottom: 2px solid rgba(255, 255, 255, 0.5);*/
