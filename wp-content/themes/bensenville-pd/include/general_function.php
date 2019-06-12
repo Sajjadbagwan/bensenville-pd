@@ -83,3 +83,8 @@ $content .= '<p><b>Recommended 1920 * 595 pixel</b></p>';
 }
 return $content;
 }
+
+function cc_mime_types($mimes) {
+$mimes['svg'] = 'image/svg+xml';
+return $mimes;
+}
