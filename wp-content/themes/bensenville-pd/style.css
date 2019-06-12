@@ -268,7 +268,7 @@ tr { border-bottom: 3px solid #d8d8d8; }
 .banner-text:before { content: ''; height: 127%; width: 100%; position: absolute; transform: skew(-4deg,-2.5deg); background-color: rgba(255, 255, 255, 0.9); left: 0; right: 0;     bottom: -36px; z-index: -1;     background-image: url(images/mobile-banner-bg.png); background-repeat: no-repeat; background-position: -28px 0; opacity: 0.9; }
 
 .banner-text .banner-text-iiner h3, .banner-text .banner-text-iiner h4, .banner-text .banner-text-iiner h5, .banner-text .banner-text-iiner h6 { font-size: 28px;	/*	transform: skew(0deg, 1deg);*/      color: #212529; padding-top: 0; }
-.banner-text-iiner  span { font-weight: bold;  text-transform: uppercase; }
+.banner-text-iiner  span { /*font-weight: bold;  text-transform: uppercase;*/ }
 .banner-text p { color: #000000; font-size: 18px; display: inline-block; padding-bottom: 0px;    vertical-align: middle; }
 .banner-text-iiner { /*transform: skew(17deg, 1deg);*/ }
 .baner-text-content { padding-top: 17px; }
