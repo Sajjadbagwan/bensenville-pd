@@ -42,6 +42,9 @@ if($_SERVER['HTTP_HOST'] == 'localhost'){
 	define('DB_USER', 'developm_general');
 	define('DB_PASSWORD', 'Lw20$qpKFhTo');
 	define('DB_HOST', '173.236.133.20');	
+	define( 'DB_CHARSET', 'utf8mb4' );
+	define( 'DB_COLLATE', '' );
+
 }
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -84,6 +87,7 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
+define('ALLOW_UNFILTERED_UPLOADS', true);
 define( 'DISALLOW_FILE_EDIT', true );
 define('WP_POST_REVISIONS', false);
 
