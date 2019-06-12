@@ -168,7 +168,7 @@
 	input#nf-field-2 { max-width: 100% !important;  float: left; }
 	.nf-field-element { max-width: 100% !important; }
 	.banner-text { max-width: 680px; }
-	.banner-text .banner-text-iiner { font-size: 24px; }
+	.banner-text .banner-text-iiner h3 { font-size: 24px; }
 	.baner-text-content a {     padding: 10px 30px; }
 
 

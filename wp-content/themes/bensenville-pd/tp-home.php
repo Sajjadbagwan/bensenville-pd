@@ -37,7 +37,7 @@ $service_section = get_field('service_section','option');
 				<?php if(!empty($slider_title) || !empty($slider_description)){ ?>
 				<div class="banner-text">
 					<div class="banner-text-iiner">
-						<?php if(!empty($slider_title)){ echo $slider_title; } ?>
+						<h3><?php if(!empty($slider_title)){ echo $slider_title; } ?></h3>
 						<?php if(!empty($slider_description)){?>
 						<div class="baner-text-content">
 							<p><?php echo $slider_description;?></p>
