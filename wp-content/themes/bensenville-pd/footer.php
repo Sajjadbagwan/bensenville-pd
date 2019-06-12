@@ -46,26 +46,25 @@ if(!empty($service_section) && (!is_front_page())){
 		$service_internal_link = $services['service_internal_link'];
 		$service_external_link = $services['service_external_link'];
 		?>
-			<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
+			<?php if(!empty($service_title) && $service_link_type == 'Internal'){?>
 				<div class="col-w-20">
 						<div class="featured-footer-box">
 							<div class="featured-footer-box-inr">
-							<a href="<?php echo $service_internal_link;?>" class="link-hover"></a>
+							<?php if(!empty($service_internal_link)){?> <a href="<?php echo $service_internal_link;?>" class="link-hover"></a><?php } ?>
 							<i class="<?php echo $icon_class; ?>"></i>
 							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
 						</div>
 					</div>
 				</div>
 			<?php } ?>
-			<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
+			<?php if(!empty($service_title) && $service_link_type == 'External'){?>
 				<div class="col-w-20">
 
 					<div class="featured-footer-box">
 						<div class="featured-footer-box-inr">
-							<a href="<?php echo $service_external_link;?>" class="link-hover" target="_blank"></a>
-						
+							<?php if(!empty($service_external_link)){?> <a href="<?php echo $service_external_link;?>" class="link-hover" target="_blank"></a> <?php } ?>
 							<i class="<?php echo $icon_class; ?>"></i>
-							<h4 class="featured-title"> <a href="javascript:void(0);" target="_blank"><?php echo $service_title;?></a></h4>
+							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
 						</div>
 					</div>
 				</div>
