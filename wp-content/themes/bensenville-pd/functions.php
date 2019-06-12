@@ -63,3 +63,4 @@ add_action('init', 'bensenville_disable_comments_admin_bar');
 
 add_filter('acf/fields/page_link/query', 'remove_draft_archive_link', 10, 3);
 add_filter( 'admin_post_thumbnail_html', 'add_featured_image_instruction');
+add_filter('upload_mimes', 'cc_mime_types');
