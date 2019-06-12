@@ -412,3 +412,4 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 
 .featured-footer .featured-footer-box { justify-content: center; }
 .featured-footer-box-inr { position: relative;     display: flex;  align-items: center; }
+.page-banner-img { position: relative; }
