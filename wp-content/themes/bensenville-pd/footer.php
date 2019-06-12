@@ -64,7 +64,7 @@ if(!empty($service_section) && (!is_front_page())){
 						<div class="featured-footer-box-inr">
 							<?php if(!empty($service_external_link)){?> <a href="<?php echo $service_external_link;?>" class="link-hover" target="_blank"></a> <?php } ?>
 							<i class="<?php echo $icon_class; ?>"></i>
-							<h4 class="featured-title"> <a href="javascript:void(0);" target="_blank"><?php echo $service_title;?></a></h4>
+							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
 						</div>
 					</div>
 				</div>
