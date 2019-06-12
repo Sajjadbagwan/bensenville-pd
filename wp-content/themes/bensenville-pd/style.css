@@ -205,11 +205,11 @@ nf-fields-wrap:after { content: ''; display: block; clear: both; }
 #nf-field-2-wrap .nf-field-element { z-index: 9999; padding-right: 10px; }
 #nf-form-title-1 h3 { color: #000000; font-family: 'Fira Sans', sans-serif; font-size: 20px; font-weight: 700; line-height: 20px; margin-bottom: 0;  }
 .breadcrumb ul {  margin-right: -30px;    padding-top: 16px }
-.breadcrumb { position: absolute; width: 100%; top: 0; background-color: transparent; color: white; text-align: right; height: 100%; }
+.breadcrumb { position: absolute; width: 100%; top: 0; background-color: transparent; color: white; text-align: right;  }
 .breadcrumb ul li { float: left; }
 .breadcrumb ul { display: inline-block; }
 .breadcrumb ul li a { color: #ffffff; font-family: 'Fira Sans', sans-serif; font-size: 23px; font-weight: 400; }
-.breadcrumb ul li:after { content: "\f105"; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 200; padding: 0 10px; font-size: 23px; }
+.breadcrumb ul li:after { content: "\f105"; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 200; padding: 0 10px; font-size: 23px;     vertical-align: middle;}
 .breadcrumb ul li:last-child::after { content: ''; }
 
 /*
@@ -406,3 +406,5 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 .link-hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .featured-box-inr { position: relative; transition: all ease 0.5s; }
 .featured-box-inr:hover .featured-title a{ color: #000; }
+
+.gradient-overlay:before {content: '';height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%); }
