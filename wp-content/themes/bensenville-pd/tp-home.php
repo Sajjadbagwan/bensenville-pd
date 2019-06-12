@@ -95,7 +95,11 @@ $service_section = get_field('service_section','option');
 						<?php } ?>
 						<i class="<?php echo $icon_class;?>"></i>
 						<div class="featured-box-inner">
-							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php if(!empty($service_internal_link) || !empty($service_external_link)){?> 
+								<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php } else{ ?>
+								<h4 class="featured-title"><?php echo $service_title;?></h4>
+							<?php } ?>
 							<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 						
 
