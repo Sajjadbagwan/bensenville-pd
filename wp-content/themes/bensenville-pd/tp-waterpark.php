@@ -1,6 +1,6 @@
 <?php
 /**
- Template Name:  Waterpark
+ Template Name:  Landing Page
  */
 get_header();
 
