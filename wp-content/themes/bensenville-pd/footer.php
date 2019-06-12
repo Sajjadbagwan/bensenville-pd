@@ -52,7 +52,11 @@ if(!empty($service_section) && (!is_front_page())){
 							<div class="featured-footer-box-inr">
 							<?php if(!empty($service_internal_link)){?> <a href="<?php echo $service_internal_link;?>" class="link-hover"></a><?php } ?>
 							<i class="<?php echo $icon_class; ?>"></i>
-							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php if(!empty($service_internal_link)){?> 
+									<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php } else{ ?>
+									<h4 class="featured-title"> <?php echo $service_title;?></h4>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -64,7 +68,11 @@ if(!empty($service_section) && (!is_front_page())){
 						<div class="featured-footer-box-inr">
 							<?php if(!empty($service_external_link)){?> <a href="<?php echo $service_external_link;?>" class="link-hover" target="_blank"></a> <?php } ?>
 							<i class="<?php echo $icon_class; ?>"></i>
-							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php if(!empty($service_external_link)){?> 
+									<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php } else{ ?>
+									<h4 class="featured-title"> <?php echo $service_title;?></h4>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
