@@ -401,3 +401,8 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 .new-content { color: #000000; font-size: 18px; font-weight: 400; line-height: 27px; font-family: 'Fira Sans', sans-serif; padding-bottom: 30px; }
 
 .gca-column { margin-bottom: 30px; }
+
+
+.link-hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.featured-box-inr { position: relative; transition: all ease 0.5s; }
+.featured-box-inr:hover .featured-title a{ color: #000; }
