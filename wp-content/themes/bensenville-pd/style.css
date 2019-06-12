@@ -410,4 +410,5 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 
 .gradient-overlay:before {content: '';height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%); }
 
+.featured-footer .featured-footer-box { justify-content: center; }
 .featured-footer-box-inr { position: relative;     display: flex;  align-items: center; }
