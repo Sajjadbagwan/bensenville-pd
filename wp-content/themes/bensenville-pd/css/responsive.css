@@ -168,7 +168,7 @@
 	input#nf-field-2 { max-width: 100% !important;  float: left; }
 	.nf-field-element { max-width: 100% !important; }
 	.banner-text { max-width: 680px; }
-	.banner-text h3 { font-size: 24px; }
+	.banner-text .banner-text-iiner { font-size: 24px; }
 	.baner-text-content a {     padding: 10px 30px; }
 
 
@@ -294,7 +294,7 @@
     background-repeat: no-repeat; background-position: -290px 0; background-size: cover;     padding: 20px 0 50px;
     margin: 5px 0 0; }
 	.banner-text:before { display: none; }
-	.banner-text-iiner h3 span { font-weight: bold;  display: block; text-transform: uppercase; }
+	
 	.baner-text-content { padding-top: 5px; }
 	button.owl-dot span { height: 16px; width: 16px; display: inline-block; padding: 0; }
 
@@ -339,6 +339,7 @@
 	.field-wrap.email-wrap {padding-right: 0;}
 	.footer-logo p { display: block; }
 	.gca-column { margin-bottom: 15px !important; }
+	.banner-text-iiner  span { display: block; }
 
 }
 
