@@ -68,7 +68,7 @@ a.logo.menu-logo { position: absolute; text-align: center; width: 100%; padding:
 ul#menu-main_menu_right-1 { padding-left: 42px; }
 .col-md-2.logo-column { padding-left: 0; padding-right: 0; }
 .owl-theme .owl-controls .owl-page span { background: none repeat scroll 0 0 #869791; border-radius: 20px; display: block; height: 12px; margin: 5px 7px; opacity: 0.5; width: 12px; }
-.owl-dots { position: absolute; bottom: -19px; text-align: center; display: inline-block; margin: 0 auto; padding: 7px 10px; z-index: 999; left: calc(50% - 74px); width: auto; background-color: #ffffff; border-radius: 15px; }
+.owl-dots { position: absolute; bottom: -19px; text-align: center; display: inline-block; margin: 0 auto; padding: 7px 10px; z-index: 999; left: 50%; width: auto; background-color: #ffffff; border-radius: 15px;     transform: translateX(-50%) }
 button.owl-dot span {  background-color: rgba(213, 213, 213, 1); border-radius: 50%; margin: 0 6px;     width: 21px; height: 21px; display: inline-block;}
 button.owl-dot,
 button.owl-dot.active { outline: none; }
