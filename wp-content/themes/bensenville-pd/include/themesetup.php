@@ -128,7 +128,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if(function_exists('acf_add_options_page'))
 {
     acf_add_options_page (array(
-        'page_title'=>'General Setting',
+        'page_title'=>'General Settings',
         'menu_title'=>'General Settings',
         'menu_slug'=>'theme-general-settings',
         'capability'=>'edit_posts',
