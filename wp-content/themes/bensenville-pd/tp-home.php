@@ -87,16 +87,17 @@ $service_section = get_field('service_section','option');
 			<div class="col-w-20">
 				<div class="featured-box">
 					<div class="featured-box-inr">
-						<i class="<?php echo $icon_class;?>"></i>
-						<div class="featured-box-inner">
-							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
-							<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
 						<?php if(!empty($service_title) && $service_link_type == 'Internal' && !empty($service_internal_link)){?>
 							<a href="<?php echo $service_internal_link;?>" class="link-hover"></a>
 						<?php } ?>
 						<?php if(!empty($service_title) && $service_link_type == 'External' && !empty($service_external_link)){?>
 							<a href="<?php echo $service_external_link;?>" class="link-hover" target="_blank"></a>
 						<?php } ?>
+						<i class="<?php echo $icon_class;?>"></i>
+						<div class="featured-box-inner">
+							<h4 class="featured-title"> <a href="javascript:void(0);"><?php echo $service_title;?></a></h4>
+							<?php if(!empty($service_description)){?><p><?php echo $service_description;?> </p><?php } ?>
+						
 
 						
 					</div>
