@@ -8,7 +8,6 @@ $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-// $banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
 $banner_image_array = get_field('banner_image','option');
 $banner_image = $banner_image_array['sizes']['waterpark_banner_image'];
 $banner_desktop_image_array =get_field('banner_desktop_image');
@@ -44,15 +43,6 @@ if($parent_id != 0){
 			</ul>
 		</div>
 	</div>
-	<?php if(!empty($banner_logo)){?>
-	<div class="banner-logo">
-		<div class="container">
-			<div class="banner-logo-inner">
-				<img src="<?php echo $banner_logo;?>" alt="">
-			</div>
-		</div>
-	</div>
-	<?php } ?>
 </section>
 
 
