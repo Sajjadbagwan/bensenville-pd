@@ -25,12 +25,12 @@ if($parent_id != 0){
 ?>
 <section class="page-banner">
 		<?php if(wp_is_mobile()){?>
-			<div class="page-banner-img gradient-overlay bg-cover" style="background-image: url('<?php if(!empty($banner_mobile_image)){ echo $banner_mobile_image; } else{ echo $banner_image; } ?>');">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+			<div class="page-banner-img gradient-overlay">
+				<img src="<?php if(!empty($banner_mobile_image)){ echo $banner_mobile_image; } else{ echo $banner_image; } ?>" alt="">
 			</div>
 		<?php }else{ ?>
-			<div class="page-banner-img gradient-overlay bg-cover" style="background-image: url('<?php if(!empty($banner_desktop_image)){ echo $banner_desktop_image; } else{ echo $banner_image; } ?>');">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+			<div class="page-banner-img gradient-overlay">
+				<img src="<?php if(!empty($banner_desktop_image)){ echo $banner_desktop_image; } else{ echo $banner_image; } ?>" alt="">
 			</div>
 		<?php } ?>
 	<div class="breadcrumb">
@@ -44,15 +44,7 @@ if($parent_id != 0){
 			</ul>
 		</div>
 	</div>
-	<?php if(!empty($banner_logo)){?>
-	<div class="banner-logo">
-		<div class="container">
-			<div class="banner-logo-inner">
-				<img src="<?php echo $banner_logo;?>" alt="">
-			</div>
-		</div>
-	</div>
-	<?php } ?>
+	
 </section>
 
 
