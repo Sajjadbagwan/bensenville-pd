@@ -8,13 +8,12 @@ $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-// $banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
 $banner_image_array = get_field('banner_image','option');
-$banner_image = $banner_image_array['sizes']['waterpark_banner_image'];
+$banner_image = $banner_image_array['sizes']['waterpark_desktop_image'];
 $banner_desktop_image_array =get_field('banner_desktop_image');
-$banner_desktop_image = $banner_desktop_image_array['sizes']['waterpark_banner_image'];
+$banner_desktop_image = $banner_desktop_image_array['sizes']['waterpark_desktop_image'];
 $banner_mobile_image_array =get_field('banner_mobile_image');
-$banner_mobile_image = $banner_mobile_image_array['sizes']['waterpark_banner_image'];
+$banner_mobile_image = $banner_mobile_image_array['sizes']['waterpark_mobile_image'];
 
 
 $parent_id = wp_get_post_parent_id($id);
@@ -44,7 +43,6 @@ if($parent_id != 0){
 			</ul>
 		</div>
 	</div>
-	
 </section>
 
 
