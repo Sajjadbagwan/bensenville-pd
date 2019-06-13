@@ -8,11 +8,15 @@ $id =get_the_ID();
 $page=get_page($id); 
 $page_link = get_page_link($id);
 $page_title = $page->post_title;
-$banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
+// $banner = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'waterpark_banner_image' );
 $banner_image_array = get_field('banner_image','option');
 $banner_image = $banner_image_array['sizes']['waterpark_banner_image'];
-$banner_logo_array = get_field('banner_logo');
-$banner_logo = $banner_logo_array['sizes']['waterpark_banner_logo'];
+$banner_desktop_image_array =get_field('banner_desktop_image');
+$banner_desktop_image = $banner_desktop_image_array['sizes']['waterpark_banner_image'];
+$banner_mobile_image_array =get_field('banner_mobile_image');
+$banner_mobile_image = $banner_mobile_image_array['sizes']['waterpark_banner_image'];
+
+
 $parent_id = wp_get_post_parent_id($id);
 if($parent_id != 0){
 	$parent_page =get_page($parent_id); 
@@ -20,10 +24,15 @@ if($parent_id != 0){
 }
 ?>
 <section class="page-banner">
-	<div class="page-banner-img gradient-overlay bg-cover" style="background-image: url('<?php if(!empty($banner)){ echo $banner[0]; } else{ echo $banner_image; } ?>');">
-		
-		<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
-	</div>
+		<?php if(wp_is_mobile()){?>
+			<div class="page-banner-img gradient-overlay bg-cover" style="background-image: url('<?php if(!empty($banner_mobile_image)){ echo $banner_mobile_image; } else{ echo $banner_image; } ?>');">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+			</div>
+		<?php }else{ ?>
+			<div class="page-banner-img gradient-overlay bg-cover" style="background-image: url('<?php if(!empty($banner_desktop_image)){ echo $banner_desktop_image; } else{ echo $banner_image; } ?>');">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/placeholder-35x11.png" alt="">
+			</div>
+		<?php } ?>
 	<div class="breadcrumb">
 		<div class="container">
 			<ul class="clearfix">
