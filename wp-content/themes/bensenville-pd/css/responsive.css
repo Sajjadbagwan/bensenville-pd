@@ -187,7 +187,9 @@
 	.menu-open .toggle-menu i:before{ top:0; -webkit-transform:rotate(-45deg); transform:rotate(-45deg); -webkit-transition:all 0.2s linear, -webkit-transform 0.2s linear 0.2s; transition:all 0.2s linear, -webkit-transform 0.2s linear 0.2s; transition:all 0.2s linear, transform 0.2s linear 0.2s; transition:all 0.2s linear, transform 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;}
 	.home .footer { padding-bottom: 83px; }
 	.toggle-line { height: 30px; width: 30px;  }
-	.banner-text:before { bottom: -56px; }
+	.banner-text:before { bottom: -70px; }
+	.baner-text-content { padding: 0px 20px; }
+	.banner-text .banner-text-iiner h3 { font-size: 24px; }
 
 
 }
@@ -241,7 +243,7 @@
 	.banner-text {		/* margin-top: 119px; */ }
 	.banner-wrap .item img { width: auto; height: 240px; }
 	.banner-text { position: unset; display: block; width: 100%; -webkit-transform: skew(0deg, 0deg); transform: skew(0deg, 0deg); background-color: #eeeeee47; }
-	.banner-text-iiner h3 { font-size: 22px; font-weight: 700;		/* Text style for "Through Ap" */ font-family: "Fira Sans"; font-weight: 400; text-transform: none; }
+	.banner-text .banner-text-iiner h3 { font-size: 22px; font-weight: 700;		/* Text style for "Through Ap" */ font-family: "Fira Sans"; font-weight: 400; text-transform: none; }
 	.baner-text-content p { color: #000000; font-family: "Fira Sans"; font-size: 20px; font-weight: 400; display: block;     padding: 0px 30px;}
 	.baner-text-content a { font-size: 17px; font-weight: 400; margin-top: 20px;    max-width: 207px;
     text-align: center;  padding: 0; height: 48px; line-height: 46px; width: 100%; }
