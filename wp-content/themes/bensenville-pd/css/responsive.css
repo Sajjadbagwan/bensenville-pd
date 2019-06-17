@@ -350,6 +350,7 @@
 	.banner-text-iiner  span { display: block; } 
 	.gradient-overlay:before{display: none}
 	.page-banner .banner-logo .banner-logo-inner img { width: auto; max-width: 100%; height: auto; }
+	.featured-footer .featured-footer-box {     justify-content: flex-start; }
 	
 
 }
