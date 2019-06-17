@@ -23,7 +23,7 @@ if($parent_id != 0){
 }
 ?>
 <section class="page-banner">
-		<?php if(wp_is_mobile()){?>
+		<?php if(isMobile()){?>
 			<div class="page-banner-img gradient-overlay">
 				<img src="<?php if(!empty($banner_mobile_image)){ echo $banner_mobile_image; } else{ echo $banner_image; } ?>" alt="">
 			</div>

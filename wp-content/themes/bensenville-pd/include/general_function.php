@@ -86,3 +86,7 @@ function cc_mime_types($mimes) {
 $mimes['svg'] = 'image/svg+xml';
 return $mimes;
 }
+
+function isMobile(){
+return preg_match("/(android|iphone|\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+}
