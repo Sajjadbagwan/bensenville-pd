@@ -1,4 +1,10 @@
 
+
+@media (min-width:1025px) {
+	.featured-box-inr > a:hover  ~ .featured-box-inner .featured-title a, .featured-box-inr > a:hover  ~ i, .featured-box-inr > a:hover  ~ .featured-box-inner p { color: #000; }
+	.featured-footer-box-inr > a:hover  ~  .featured-title a, .featured-footer-box-inr > a:hover  ~  i { color: #000; }
+}
+
 @media (min-width:1366px) {
 	.container { max-width: 1300px; }
 }
