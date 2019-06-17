@@ -405,11 +405,13 @@ input#nf-field-2 {     -webkit-appearance: none;     -moz-appearance: none; }
 
 .link-hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .featured-box-inr { position: relative; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
-.featured-box-inr > a:hover  ~ .featured-box-inner .featured-title a { color: #000; }
-.featured-footer-box-inr > a:hover  ~  .featured-title a { color: #000; }
+.featured-box-inr > a:hover  ~ .featured-box-inner .featured-title a, .featured-box-inr > a:hover  ~ i, .featured-box-inr > a:hover  ~ .featured-box-inner p { color: #000; }
+.featured-footer-box-inr > a:hover  ~  .featured-title a, .featured-footer-box-inr > a:hover  ~  i { color: #000; }
 
 .gradient-overlay:before {content: '';height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.48))); background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.48) 100%); }
 
 .featured-footer .featured-footer-box { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .featured-footer-box-inr { position: relative;     display: -webkit-box;     display: -ms-flexbox;     display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center; }
 .page-banner-img { position: relative; }
+
+.featured-box-inr  i, .featured-box-inr  p,  .featured-footer-box-inr i { transition: all ease 0.5s; }
