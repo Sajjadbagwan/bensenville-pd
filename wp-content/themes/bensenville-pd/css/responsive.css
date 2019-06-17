@@ -246,7 +246,7 @@
 	.baner-text-content a { font-size: 17px; font-weight: 400; margin-top: 20px;    max-width: 207px;
     text-align: center;  padding: 0; height: 48px; line-height: 46px; width: 100%; }
 	.banner-text-iiner { -webkit-transform: skew(0deg, 0deg); transform: skew(0deg, 0deg); }
-	.owl-dots { left: calc(50% - 58px); }
+	
 	section.page-banner .banner-logo img { width: 100%; }
 	.banner-logo { padding: 19px 0; width: 100%; position: relative; z-index: 99999; padding-bottom: 0; }
 	.banner-logo-inner { -webkit-transform: rotate(0); transform: rotate(0); width: 100%; padding: 60px 0 10px; }
